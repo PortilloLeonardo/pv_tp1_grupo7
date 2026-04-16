@@ -1,0 +1,244 @@
+/* Vamos a usar un estilo gamer para la página por lo que vamos a 
+concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
+
+/*==============================================================
+REINICIA LOS PARAMETROS PARA MEJOR LECTURA EN CUALQUIER BROWSER
+===============================================================*/
+
+* {
+  margin: 0;
+  /*Quita el espacio externo de todas las cajas */
+  padding: 0;
+  /*Quita el espacio interno de todas las cajas */
+  box-sizing: border-box;
+  /*Hace que el tamaño de la caja sea fácil de calcular */
+}
+
+:root {
+  --colorFondoGeneral: #131314;
+  --colorFondoTarjetas: #1e1e1f;
+  --colorFondoMenu: #43434b;
+  --colorFondoPie: #0b0b0c;
+  /*COLOR DE LOS FONDOS*/
+  --colorTitulos: #4fc3f7;
+  --colorSubtitulos: #81d4fa;
+  --colorTextoGeneral: #e3e3e3;
+  --colorTextoSuave: #878787;
+  --colorResaltado: #ffffff;
+  --colorSombraTarjetas: #0e0e0e;
+  --colorTextoColor: #6bc3ec;
+  /*COLOR DE LAS FUENTES*/
+  --colorBordeSuave: #333333;
+  --colorBordeColor: #0c79bc;
+  /*COLOR DE LOS BORDES*/
+  --fuentePrincipal: "Candara", sans-serif;
+  --negrita: bold;
+  /*TIPOS DE FUENTE*/
+  --tamañoTitulo: 3rem;
+  --tamañoSubtitulo: 2rem;
+  --tamañoCuerpo: 1rem;
+  /*TAMAÑO DE LAS FUENTES EN REM PARA QUE SEA RELATIVO*/
+  --tamañoGrande: 30px;
+  --tamañoChico: 10px;
+  /*TAMAÑO DE LOS MARGENES Y ESPACIOS*/
+  --cambioSuave: 0.5seg;
+  /*MEDIDA DE TIEMPO PARA EFECTOS*/
+}
+
+h1 {
+  font-family: var(--fuentePrincipal);
+  /*FUENTE DEL TITULO*/
+  font-size: var(--tamañoTitulo);
+  /*TAMAÑO DEL TITULO*/
+  font-weight: var(--negrita);
+  /*AUMENTA EL GROSOR DEL TITULO*/
+  letter-spacing: 2px;
+  /*SEPARACION DE LAS LETRAS*/
+  color: var(--colorTitulos);
+  /*COLOR DE LA FUENTE DEL TITULO*/
+  margin-bottom: var(--tamañoGrande);
+  /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
+  text-align: center;
+  /*APLICA ALINEACIÓN CENTRALIZADA*/
+}
+
+body {
+  background-color: var(--colorFondoGeneral);
+  /*COLOR DEL FONDO*/
+  color: var(--colorTextoGeneral);
+  /*COLOR DE LA FUENTE*/
+  font-family: var(--fuentePrincipal);
+  /*TIPO DE FUENTE*/
+  line-height: 1.6;
+  /*INTERLINEADO*/
+}
+
+h2 {
+  font-size: var(--tamañoSubtitulo);
+  /*TAMAÑO DE LOS SUBTITULOS */
+  color: var(--colorSubtitulos);
+  /*COLOR DE LOS SUBTITULOS*/
+  border-bottom: 1px solid var(--colorBordeSuave);
+  /*LINEA DEBAJO PARA SEPARAR SECCIONES*/
+  padding-bottom: var(--tamañoChico);
+  /*ESPACIO PARA EL SIGUIENTE CUADRO*/
+  text-align: left;
+  /*APLICA ALINEACIÓN DE IZQUIERDA*/
+  margin-top: var(--tamañoGrande) * 2;
+  /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
+  padding-left: var(--tamañoChico) * 3;
+  /*ESPACIO DE MARGEN IZQUIERDO*/
+}
+
+/*====================
+DISEÑO DE LOS ENLACES
+=====================*/
+
+nav {
+  background-color: var(--colorFondoMenu);
+  /*COLOR DEL FONDO DEL NAVEGADOR*/
+  padding: var(--tamañoChico);
+  /*ESPACIO EN BLANCO ARRIBA Y ABAJO DEL MENÚ*/
+  text-align: center;
+  /*CENTRAR EL TEXTO*/
+  border-bottom: 2px solid var(--colorBordeColor);
+  /*LINEA DE SEPARACIÓN AL CONTENIDO*/
+  margin-bottom: var(--tamañoGrande);
+  /*ESPACIO DEBAJO DEL MENPU*/
+}
+
+/*DEFINE EL ESTILO DE LOS ENLACES*/
+nav a {
+  color: var(--colorTitulos);
+  /*COLOR DE LA FUENTE*/
+  text-decoration: none;
+  /*QUITA EL SUBRAYADO POR DEFECTO*/
+  margin: var(--tamañoGrande);
+  /*ESPACIO ENTRE LOS ENLACES*/
+  font-weight: var(--negrita);
+  /*GROSOR DE LA LETRA*/
+  transition: var(--cambioSuave);
+  /*EFECTO DE CAMBIOS DE COLOR SUAVE*/
+}
+
+/*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
+nav a:hover {
+  color: var(--colorResaltado);
+  /*COLOR DE FUENTE CUANDO SE COLOCA ENCIMA EL MOUSE*/
+}
+
+/*=====================================
+DISEÑO DE LAS TARJETAS PARA LOS DATOS
+======================================*/
+
+.cajasDatos {
+  display: flex;
+  /*CAJA FELXIBLE: COLOCA A TODAS LAS CAJAS EN FILA HORIZONTAL*/
+  justify-content: space-around;
+  /*APLICA ALINEACION JUSTIFICADA ENTRE LAS CAJAS*/
+  flex-wrap: wrap;
+  /*SI NO ENTRAN EN PANTALLA SE BAJAN*/
+  gap: 20px;
+  /*ESPACIO ENTRE TARJETAS*/
+  padding: 20px 0;
+  /*ESPACIO ARRIBA Y ABAJO*/
+}
+
+.tarjeta {
+  background-color: var(--colorFondoTarjetas);
+  /*COLOR DE FONDO A CADA TARJETA*/
+  border: 1px solid var(--colorBordeSuave);
+  /*BORDE DE LA TARJETA*/
+  border-radius: 10px;
+  /*REDONDEA LOS BORDES*/
+  padding: var(--tamañoGrande);
+  /*ESPACIO ARRIBA Y ABAJO*/
+  width: 200px;
+  /*ANCHO PARA QUE TODOS SEAN IGUALES*/
+  text-align: center;
+  /*ALINEACION DEL TEXTO DENTRO DE LAS TARJETAS*/
+  box-shadow: 0 4px 10px var(--colorSombraTarjetas);
+  /*EFECTO DE SOMBRA PARA LA TARJETA*/
+  transition: var(--cambioSuave);
+  /*EFECTO DE MOVIMIENTO*/
+}
+
+/*EFECTO HOVER AL PASAR EL MOUSE POR LA TARJETA*/
+.tarjeta:hover {
+  transform: translateY(-5px);
+  /*LA TARJETA SUBE CUANDO PASO EL MOUSE*/
+  border-color: var(--colorBordeColor);
+  /*EL BORDE CAMBIA EL COLOR AL PASAR EL MOUSE*/
+}
+
+.tarjeta h3 {
+  font-size: 0.9rem;
+  /*TAMAÑO DE LA FUENTE A ESCALA rem*/
+  color: var(--colorTextoSuave);
+  /*COLOR DE LA FUENTE*/
+  text-transform: uppercase;
+  /*OBLIGA AL TEXTO A USAR MAYUSCULAS*/
+}
+
+.tarjeta p {
+  font-size: 2rem;
+  /*TAMAÑO DE LA FUENTE*/
+  color: var(--colorTextoColor);
+  /*COLOR DE LA FUENTE*/
+  font-weight: var(--negrita);
+  /*GROSOR DE LA FUENTE*/
+  margin-top: var(--tamañoChico);
+  /*MARGEN SUPERIOR*/
+}
+
+/*==================
+DISEÑO DE LAS LISTAS
+===================*/
+
+ul {
+  list-style-type: none;
+  /*QUITA LOS PUNTOS DE LISTA POR DEFECTO*/
+  padding-left: var(--tamañoGrande);
+  /*GENERA MARGEN A LA IZQUIERDA*/
+}
+
+li::before {
+  content: "> ";
+  /*PONE UN SIMBOLO ANTES DE CADA ITEM*/
+  color: var(--colorTextoColor);
+  /*CAMBIA EL COLOR DE LA FUENTE*/
+  font-weight: var(--negrita);
+  /*CAMBIA EL GROSOR DE LA FUENTE*/
+}
+
+footer {
+  background-color: var(--colorFondoPie);
+  /*COLOR DEL FONDO*/
+  color: var(--colorTextoSuave);
+  /*COLOR DE LA FUENTE*/
+  text-align: center;
+  /*ALINEACION DE TEXTO CENTRADA*/
+  padding: var(--tamañoGrande);
+  /*GENERA ESPACIO ARRIBA Y ABAJO (NO MARGEN)*/
+  margin-top: var(--tamañoGrande) * 2;
+  /*MARGEN SUPERIOR*/
+  border-top: 1px solid var(--colorBordeSuave);
+  /*MARCA UNA LINEA SUPERIOR*/
+  font-size: 0.85rem;
+  /*TAMAÑO DE LA FUENTE*/
+}
+
+footer a {
+  color: var(--colorTitulos);
+  /*COLOR DE LA FUENTE*/
+  text-decoration: none;
+  /*ELIMINA EL SUBRAYADO POR DEFECTO*/
+  font-weight: var(--negrita);
+  /*ANCHO DE LA FUENTE*/
+}
+
+/*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
+footer a:hover {
+  text-decoration: underline;
+  /*APLICA SUBRAYADO*/
+}
