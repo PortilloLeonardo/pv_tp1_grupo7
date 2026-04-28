@@ -1,93 +1,59 @@
-/* Vamos a usar un estilo gamer para la página por lo que vamos a 
-concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
-
 /*==============================================================
 REINICIA LOS PARAMETROS PARA MEJOR LECTURA EN CUALQUIER BROWSER
 ===============================================================*/
 
 * {
-  margin: 0;
   /*Quita el espacio externo de todas las cajas */
-  padding: 0;
+  margin: 0;
   /*Quita el espacio interno de todas las cajas */
-  box-sizing: border-box;
+  padding: 0;
   /*Hace que el tamaño de la caja sea fácil de calcular */
-}
-
-:root {
-  --colorFondoGeneral: #131314;
-  --colorFondoTarjetas: #1e1e1f;
-  --colorFondoMenu: #43434b;
-  --colorFondoPie: #0b0b0c;
-  /*COLOR DE LOS FONDOS*/
-  --colorTitulos: #4fc3f7;
-  --colorSubtitulos: #81d4fa;
-  --colorTextoGeneral: #e3e3e3;
-  --colorTextoSuave: #878787;
-  --colorResaltado: #ffffff;
-  --colorSombraTarjetas: #0e0e0e;
-  --colorTextoColor: #6bc3ec;
-  /*COLOR DE LAS FUENTES*/
-  --colorBordeSuave: #333333;
-  --colorBordeColor: #0c79bc;
-  /*COLOR DE LOS BORDES*/
-  --fuentePrincipal: "Candara", sans-serif;
-  --negrita: bold;
-  /*TIPOS DE FUENTE*/
-  --tamañoTitulo: 3rem;
-  --tamañoSubtitulo: 2rem;
-  --tamañoCuerpo: 1rem;
-  /*TAMAÑO DE LAS FUENTES EN REM PARA QUE SEA RELATIVO*/
-  --tamañoGrande: 30px;
-  --tamañoChico: 10px;
-  /*TAMAÑO DE LOS MARGENES Y ESPACIOS*/
-  --cambioSuave: 0.5seg;
-  /*MEDIDA DE TIEMPO PARA EFECTOS*/
+  box-sizing: border-box;
 }
 
 h1 {
-  font-family: var(--fuentePrincipal);
   /*FUENTE DEL TITULO*/
-  font-size: var(--tamañoTitulo);
+  font-family: var(--fuentePrincipal);
   /*TAMAÑO DEL TITULO*/
-  font-weight: var(--negrita);
+  font-size: var(--tamañoTitulo);
   /*AUMENTA EL GROSOR DEL TITULO*/
-  letter-spacing: 2px;
+  font-weight: bold;
   /*SEPARACION DE LAS LETRAS*/
-  color: var(--colorTitulos);
+  letter-spacing: 3px;
   /*COLOR DE LA FUENTE DEL TITULO*/
-  margin-bottom: var(--tamañoGrande);
+  color: var(--colorTitulo);
   /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
-  text-align: center;
+  margin-bottom: 30px;
   /*APLICA ALINEACIÓN CENTRALIZADA*/
+  text-align: center;
 }
 
 body {
-  background-color: var(--colorFondoGeneral);
   /*COLOR DEL FONDO*/
-  color: var(--colorTextoGeneral);
+  background-color: var(--colorFondoGeneral);
   /*COLOR DE LA FUENTE*/
-  font-family: var(--fuentePrincipal);
+  color: var(--colorTextoGeneral);
   /*TIPO DE FUENTE*/
-  line-height: 1.6;
+  font-family: var(--fuentePrincipal);
   /*INTERLINEADO*/
+  line-height: 1.6;
 }
 
 h2 {
-  font-size: var(--tamañoSubtitulo);
   /*TAMAÑO DE LOS SUBTITULOS */
-  color: var(--colorSubtitulos);
+  font-size: var(--tamañoSubtitulo);
   /*COLOR DE LOS SUBTITULOS*/
-  border-bottom: 1px solid var(--colorBordeSuave);
+  color: var(--colorSubtitulos);
   /*LINEA DEBAJO PARA SEPARAR SECCIONES*/
-  padding-bottom: var(--tamañoChico);
+  border-bottom: 1px solid #333333;
   /*ESPACIO PARA EL SIGUIENTE CUADRO*/
-  text-align: left;
+  padding-bottom: 10px;
   /*APLICA ALINEACIÓN DE IZQUIERDA*/
-  margin-top: var(--tamañoGrande) * 2;
+  text-align: left;
   /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
-  padding-left: var(--tamañoChico) * 3;
+  margin-top: 60px;
   /*ESPACIO DE MARGEN IZQUIERDO*/
+  padding-left: 30px;
 }
 
 /*====================
@@ -95,36 +61,36 @@ DISEÑO DE LOS ENLACES
 =====================*/
 
 nav {
-  background-color: var(--colorFondoMenu);
   /*COLOR DEL FONDO DEL NAVEGADOR*/
-  padding: var(--tamañoChico);
+  background-color: var(--colorFondoMenu);
   /*ESPACIO EN BLANCO ARRIBA Y ABAJO DEL MENÚ*/
-  text-align: center;
+  padding: 10px;
   /*CENTRAR EL TEXTO*/
-  border-bottom: 2px solid var(--colorBordeColor);
+  text-align: center;
   /*LINEA DE SEPARACIÓN AL CONTENIDO*/
-  margin-bottom: var(--tamañoGrande);
+  border-bottom: 2px solid #333333;
   /*ESPACIO DEBAJO DEL MENPU*/
+  margin-bottom: 30px;
 }
 
 /*DEFINE EL ESTILO DE LOS ENLACES*/
 nav a {
-  color: var(--colorTitulos);
   /*COLOR DE LA FUENTE*/
-  text-decoration: none;
+  color: var(--colorTitulo);
   /*QUITA EL SUBRAYADO POR DEFECTO*/
-  margin: var(--tamañoGrande);
+  text-decoration: none;
   /*ESPACIO ENTRE LOS ENLACES*/
-  font-weight: var(--negrita);
+  margin: 30px;
   /*GROSOR DE LA LETRA*/
-  transition: var(--cambioSuave);
+  font-weight: bold;
   /*EFECTO DE CAMBIOS DE COLOR SUAVE*/
+  transition: 0.5 seg;
 }
 
 /*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
 nav a:hover {
-  color: var(--colorResaltado);
   /*COLOR DE FUENTE CUANDO SE COLOCA ENCIMA EL MOUSE*/
+  color: var(--colorResaltado);
 }
 
 /*=====================================
@@ -132,63 +98,63 @@ DISEÑO DE LAS TARJETAS PARA LOS DATOS
 ======================================*/
 
 .cajasDatos {
-  display: flex;
   /*CAJA FELXIBLE: COLOCA A TODAS LAS CAJAS EN FILA HORIZONTAL*/
-  justify-content: space-around;
+  display: flex;
   /*APLICA ALINEACION JUSTIFICADA ENTRE LAS CAJAS*/
-  flex-wrap: wrap;
+  justify-content: space-around;
   /*SI NO ENTRAN EN PANTALLA SE BAJAN*/
-  gap: 20px;
+  flex-wrap: wrap;
   /*ESPACIO ENTRE TARJETAS*/
-  padding: 20px 0;
+  gap: 20px;
   /*ESPACIO ARRIBA Y ABAJO*/
+  padding: 20px 0;
 }
 
 .tarjeta {
-  background-color: var(--colorFondoTarjetas);
   /*COLOR DE FONDO A CADA TARJETA*/
-  border: 1px solid var(--colorBordeSuave);
+  background-color: #1e1e1f;
   /*BORDE DE LA TARJETA*/
-  border-radius: 10px;
+  border: 1px solid #333333;
   /*REDONDEA LOS BORDES*/
-  padding: var(--tamañoGrande);
+  border-radius: 10px;
   /*ESPACIO ARRIBA Y ABAJO*/
-  width: 200px;
+  padding: 30px;
   /*ANCHO PARA QUE TODOS SEAN IGUALES*/
-  text-align: center;
+  width: 200px;
   /*ALINEACION DEL TEXTO DENTRO DE LAS TARJETAS*/
-  box-shadow: 0 4px 10px var(--colorSombraTarjetas);
+  text-align: center;
   /*EFECTO DE SOMBRA PARA LA TARJETA*/
-  transition: var(--cambioSuave);
+  box-shadow: 0 4px 10px #0e0e0e;
   /*EFECTO DE MOVIMIENTO*/
+  transition: 0.5 seg;
 }
 
 /*EFECTO HOVER AL PASAR EL MOUSE POR LA TARJETA*/
 .tarjeta:hover {
-  transform: translateY(-5px);
   /*LA TARJETA SUBE CUANDO PASO EL MOUSE*/
-  border-color: var(--colorBordeColor);
+  transform: translateY(-5px);
   /*EL BORDE CAMBIA EL COLOR AL PASAR EL MOUSE*/
+  border-color: var(--colorTitulo);
 }
 
 .tarjeta h3 {
-  font-size: 0.9rem;
   /*TAMAÑO DE LA FUENTE A ESCALA rem*/
-  color: var(--colorTextoSuave);
+  font-size: 0.9rem;
   /*COLOR DE LA FUENTE*/
-  text-transform: uppercase;
+  color: var(--colorTextoSuave);
   /*OBLIGA AL TEXTO A USAR MAYUSCULAS*/
+  text-transform: uppercase;
 }
 
 .tarjeta p {
-  font-size: 2rem;
   /*TAMAÑO DE LA FUENTE*/
-  color: var(--colorTextoColor);
+  font-size: 2rem;
   /*COLOR DE LA FUENTE*/
-  font-weight: var(--negrita);
+  color: var(--colorTitulo);
   /*GROSOR DE LA FUENTE*/
-  margin-top: var(--tamañoChico);
+  font-weight: bold;
   /*MARGEN SUPERIOR*/
+  margin-top: 10px;
 }
 
 /*==================
@@ -196,49 +162,49 @@ DISEÑO DE LAS LISTAS
 ===================*/
 
 ul {
-  list-style-type: none;
   /*QUITA LOS PUNTOS DE LISTA POR DEFECTO*/
-  padding-left: var(--tamañoGrande);
+  list-style-type: none;
   /*GENERA MARGEN A LA IZQUIERDA*/
+  padding-left: 30px;
 }
 
 li::before {
-  content: "> ";
   /*PONE UN SIMBOLO ANTES DE CADA ITEM*/
-  color: var(--colorTextoColor);
+  content: "> ";
   /*CAMBIA EL COLOR DE LA FUENTE*/
-  font-weight: var(--negrita);
+  color: var(--colorTextoColor);
   /*CAMBIA EL GROSOR DE LA FUENTE*/
+  font-weight: bold;
 }
 
 footer {
-  background-color: var(--colorFondoPie);
   /*COLOR DEL FONDO*/
-  color: var(--colorTextoSuave);
+  background-color: var(--colorFondoPie);
   /*COLOR DE LA FUENTE*/
-  text-align: center;
+  color: var(--colorTextoSuave);
   /*ALINEACION DE TEXTO CENTRADA*/
-  padding: var(--tamañoGrande);
+  text-align: center;
   /*GENERA ESPACIO ARRIBA Y ABAJO (NO MARGEN)*/
-  margin-top: var(--tamañoGrande) * 2;
+  padding: 30px;
   /*MARGEN SUPERIOR*/
-  border-top: 1px solid var(--colorBordeSuave);
+  margin-top: 60px;
   /*MARCA UNA LINEA SUPERIOR*/
-  font-size: 0.85rem;
+  border-top: 1px solid var(--colorTextoSuave);
   /*TAMAÑO DE LA FUENTE*/
+  font-size: 0.85rem;
 }
 
 footer a {
-  color: var(--colorTitulos);
   /*COLOR DE LA FUENTE*/
-  text-decoration: none;
+  color: var(--colorTitulo);
   /*ELIMINA EL SUBRAYADO POR DEFECTO*/
-  font-weight: var(--negrita);
+  text-decoration: none;
   /*ANCHO DE LA FUENTE*/
+  font-weight: bold;
 }
 
 /*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
 footer a:hover {
-  text-decoration: underline;
   /*APLICA SUBRAYADO*/
+  text-decoration: underline;
 }
