@@ -4,8 +4,9 @@ concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
 :root {
   /*COLOR DE LOS FONDOS*/
   --colorFondoGeneral: #131314;
-  --colorFondoMenu: #43434b;
-  --colorFondoPie: #0b0b0c;
+  --colorFondoHeader: #131314;
+  --colorFondoMain: #43434b;
+  --colorFondoFooter: #0b0b0c;
   /*COLOR DE LAS FUENTES*/
   --colorTitulo: #4fdbf7;
   --colorSubtitulos: #81d8fa;
