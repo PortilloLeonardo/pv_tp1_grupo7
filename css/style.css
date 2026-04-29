@@ -13,6 +13,8 @@ concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
   --colorTextoGeneral: #e3e3e3;
   --colorResaltado: #ffffff;
   --colorTextoSuave: #878787;
+  --colorActivacion: #e73131;
+  --colorActivacionBrillo: #e63f3f;
   /*TIPOS DE FUENTE*/
   --fuentePrincipal: "Candara", sans-serif;
 }
