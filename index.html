@@ -9,40 +9,47 @@
 
   <body>
     <header>
-      <a href="index.html">
-        <img src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
-      </a>
-      <h1>Plataforma de Gestión de Proyectos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="btn-crear">Crear proyecto +</button>
+      <section class="presentacion">
+        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+        <div class="contenedor-logo">
+          <a href="index.html">
+            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
+          </a>
+        </div>
+      </section>
+
+      <div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="introduccion">
         <h2>Bienvenido a la Plataforma FI UNJu.</h2>
         <p>Este es un foro abierto para estudiantes y docentes de la institucion donde el objetivo es construir conocimiento compartido. Aquí podés publicar avances de tus proyectos, resolver dudas técnicas o debatir sobre las últimas novedades de nuestras cátedras.</p>
+        <button type="button" class="btn-crear">Crear proyecto +</button>
       </section>
 
       <section id="estadisticas">
-        <h2>Resumen del sistema</h2>
-        <div class="contenedor-estadisticas">
-          <div class="card-dato">
+        <div><h2>Resumen del sistema</h2></div>
+        <div class="contenedor-card">
+          <div class="card">
             <span class="etiqueta">Proyectos totales</span>
             <span class="valor">12</span>
           </div>
 
-          <div class="card-dato">
+          <div class="card">
             <span class="etiqueta">Tareas para hoy</span>
             <span class="valor">18</span>
           </div>
 
-          <div class="card-dato">
+          <div class="card">
             <span class="etiqueta">Mensajes pendientes</span>
             <span class="valor">32</span>
           </div>
@@ -51,32 +58,40 @@
 
       <section id="novedades">
         <h2>Novedades</h2>
-        <article class="noticia">
-          <div>
+        <div class="articulos">
+          <article class="noticia">
             <h3>Se ha cargado una actualización para el inicio.</h3>
-            <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
-            <p class="descripcion">Se han añadido nuevos articulos y una nueva interface para el usuario.</p>
-            <p class="publicacion">Portillo Leonardo - 29/04/2026</p>
-          </div>
-        </article>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">Se han añadido nuevos articulos y una nueva interface para el usuario.</p>
+                <p class="publicacion">Portillo Leonardo - 29/04/2026</p>
+              </div>
+            </div>
+          </article>
 
-        <article class="noticia">
-          <div>
+          <article class="noticia">
             <h3>Nuevo sistema de carga de Trabajos Prácticos.</h3>
-            <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
-            <p class="descripcion">La presentacion de los trabajos prácticos deberan realizarse mediante repositorios.</p>
-            <p class="publicacion">Ramos Martin - 28/04/2026</p>
-          </div>
-        </article>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">La presentacion de los trabajos prácticos deberan realizarse mediante repositorios.</p>
+                <p class="publicacion">Ramos Martin - 28/04/2026</p>
+              </div>
+            </div>
+          </article>
 
-        <article class="noticia">
-          <div>
+          <article class="noticia">
             <h3>Las notas del trabajo práctico 1 ya fueron publicadas.</h3>
-            <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
-            <p class="descripcion">Las correcciones de los trabajos ya fue publicada y cuentan con detalles en su devolución.</p>
-            <p class="publicacion">Apaza Carolina - 24/04/2026</p>
-          </div>
-        </article>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">Las correcciones de los trabajos ya fue publicada y cuentan con detalles en su devolución.</p>
+                <p class="publicacion">Apaza Carolina - 24/04/2026</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 

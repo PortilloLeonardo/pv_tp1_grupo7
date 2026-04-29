@@ -9,14 +9,10 @@ concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
   --colorFondoFooter: #0b0b0c;
   /*COLOR DE LAS FUENTES*/
   --colorTitulo: #4fdbf7;
-  --colorSubtitulos: #81d8fa;
+  --colorSubtitulo: #96efff;
   --colorTextoGeneral: #e3e3e3;
   --colorResaltado: #ffffff;
   --colorTextoSuave: #878787;
   /*TIPOS DE FUENTE*/
   --fuentePrincipal: "Candara", sans-serif;
-  /*TAMAÑO DE LAS FUENTES EN REM PARA QUE SEA RELATIVO*/
-  --tamañoTitulo: 3rem;
-  --tamañoSubtitulo: 2rem;
-  --tamañoCuerpo: 1rem;
 }

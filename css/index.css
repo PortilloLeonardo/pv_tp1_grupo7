@@ -1,12 +1,240 @@
-/*==============================================================
-REINICIA LOS PARAMETROS PARA MEJOR LECTURA EN CUALQUIER BROWSER
-===============================================================*/
-
+/*==================================
+RESET A LOS PARAMETROS DEL NAVEGADOR
+====================================*/
 * {
-  /*Quita el espacio externo de todas las cajas */
   margin: 0;
-  /*Quita el espacio interno de todas las cajas */
   padding: 0;
-  /*Hace que el tamaño de la caja sea fácil de calcular */
   box-sizing: border-box;
+}
+
+/*Especificaciones generales*/
+body {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 17% 120% 11% 0%;
+  background-color: var(--colorFondoGeneral);
+  color: var(--colorTextoGeneral);
+  font-family: var(--fuentePrincipal);
+}
+
+/*=====================================
+Especificaciones para la seccion header
+=======================================*/
+header {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  color: var(--colorTitulo);
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+/*Elementos del header*/
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentacion .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.presentacion .contenendor-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  padding-right: 5px;
+}
+
+.logo {
+  height: 95%;
+  padding: 10px;
+}
+
+/*Elementos del menu de navegacion*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: var(--colorFondoMain);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--colorSubtitulo);
+  padding: 10px 20px;
+}
+
+.nav li :hover {
+  color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 5px;
+}
+
+/*==================
+Elementos del footer
+====================*/
+
+footer {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: var(--colorTitulo);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*================
+Elementos del main
+==================*/
+
+main {
+  display: grid;
+  grid-template-rows: 20% 25% 58%;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+/*Elementos de introduccion*/
+#introduccion {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  flex-flow: wrap column;
+  gap: 20px;
+  border-bottom: 1px solid var(--colorTextoSuave);
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--colorSubtitulo);
+  margin: 10px;
+}
+
+#introduccion p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn-crear {
+  background-color: var(--colorTitulo);
+  color: var(--colorFondoGeneral);
+  font-family: var(--fuentePrincipal);
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+}
+
+.btn-crear:hover {
+  background-color: var(--colorSubtitulo);
+  color: var(--colorFondoGeneral);
+}
+
+/*Elementos de estadisticas*/
+#estadisticas {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 30px;
+  border-bottom: 1px solid var(--colorTextoSuave);
+  flex-direction: column;
+}
+
+.contenedor-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  width: 220px;
+  height: 170px;
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 10px;
+}
+
+.card .etiqueta {
+  font-size: 18px;
+  color: var(--colorTextoSuave);
+}
+.card .valor {
+  font-size: 50px;
+  color: var(--colorTitulo);
+}
+
+/*Elementos de novedades*/
+#novedades {
+  display: grid;
+  grid-template-rows: 15% 70%;
+}
+
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.articulos h3 {
+  font-size: 25px;
+}
+
+.noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid var(--colorTextoSuave);
+}
+
+.noticia h3 {
+  background-color: var(--colorFondoMain);
+  color: var(--colorTitulo);
+  text-align: center;
+}
+
+.noticia .miniatura {
+  display: flex;
+  justify-content: space-around;
+}
+
+.noticia .miniatura img {
+  width: 100px;
+  height: 100px;
+}
+
+.noticia .resumen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
 }
