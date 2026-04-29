@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Proyecto - Grupo 7</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalle.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Explorador de Proyectos</a></li>
-                <li><a href="perfil.html">Mi Perfil</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="detalle.html">Detalle</a>
+            <a href="perfil.html">Perfil</a>
         </nav>
         <hr>
         <h1>Proyecto: Implementación de Redes en Escuelas Rurales</h1>
@@ -22,25 +22,34 @@
     </header>
     <main>
         <section>
-            <h2>Descripción del Proyecto</h2>
-            <p>
-                Este proyecto tiene como objetivo principal diseñar una infraestructura de red sólida y escalable para establecimientos 
-                educativos rurales. Se busca reducir la brecha digital mediante la instalación de puntos de acceso inalámbricos y 
-                servidores locales que permitan el acceso a contenidos pedagógicos incluso en zonas con conectividad limitada.
-            </p>
-            <p>
-                A través de esta iniciativa, los docentes podrán gestionar materiales multimedia y realizar un seguimiento del 
-                progreso de los alumnos de manera digital. La propuesta técnica incluye la configuración de protocolos de 
-                enrutamiento eficientes y la capacitación técnica del personal local para el mantenimiento básico del sistema.
-            </p>
+            <h2>Proyecto: Conectividad Educativa Rural</h2>
+            <article>
+                <h3>Descripción Técnica del Proyecto</h3>
+                <p>
+                    Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
+                    La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
+                    satelital para establecimientos educativos con menos de 50 alumnos. La solución técnica incluye la instalación 
+                    de racks de comunicaciones, puntos de acceso inalámbricos con tecnología Wi-Fi 6 para cubrir áreas de recreación 
+                    y aulas, y la configuración de servidores de contenido local para que los estudiantes accedan a material 
+                    pedagógico incluso durante interrupciones del servicio externo.
+                </p>
+                <p>
+                    Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
+                    garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
+                    priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos. Este trabajo 
+                    forma parte de un esfuerzo conjunto entre estudiantes de la UNJu y comunidades locales, integrando 
+                    tecnologías modernas en entornos de difícil acceso geográfico.
+                </p>
+            </article>
         </section>
 
         <section>
             <h2>Recursos y Documentación</h2>
+            <p>A continuación, se listan los documentos técnicos necesarios para la réplica del proyecto:</p>
             <ul>
-                <li><a href="#">Manual de Instalación.pdf</a></li>
-                <li><a href="#">Planilla de Seguimiento (Google Drive)</a></li>
-                <li><a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7">Repositorio de Código en GitHub</a></li>
+                <li><a href="docs/manual_tecnico.pdf" target="_blank">Manual de Configuración de Switches.pdf</a></li>
+                <li><a href="docs/topologia_red.pdf" target="_blank">Esquema de Topología de Red (PDF)</a></li>
+                <li><a href="https://drive.google.com/drive/u/0/folders/ejemplo" target="_blank">Carpeta de Recursos Multimedia (Drive)</a></li>
             </ul>
         </section>
 
@@ -49,8 +58,8 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Rol</th>
+                        <th>Integrante</th>
+                        <th>Rol en este Proyecto</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,20 +68,20 @@
                         <td>Líder - Estructura y Dashboard</td>
                     </tr>
                     <tr>
-                        <td>Ramos,Martin Emanuel</td>
-                        <td>Dev - Tablas y Formularios</td>
+                        <td>Ramos, Martín Emanuel</td>
+                        <td>Validación de Semántica y Merge</td>
                     </tr>
                     <tr>
-                        <td>Bravo, Nicolas Exequiel</td>
-                        <td>Diseñador - Estilos y Validación</td>
+                        <td>Bravo, Nicolás Exequiel</td>
+                        <td>Diseño de Proyectos </td>
                     </tr>
                     <tr>
                         <td>Gregorio, Cristian Abraham</td>
-                        <td>Dev - Páginas Secundarias</td>
+                        <td>Desarrollador de Detalle </td>
                     </tr>
                     <tr>
                         <td>Caceres, Patricia del Milagro</td>
-                        <td>QA - Documentación y Testing</td>
+                        <td>Control de Calidad y QA</td>
                     </tr>
                 </tbody>
             </table>
