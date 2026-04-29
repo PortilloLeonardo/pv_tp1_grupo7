@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorador de Proyectos - Gestión de Proyectos Educativos</title>
+    <!-- Estilos globales compartidos con todas las páginas del sitio -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Estilos específicos de esta página -->
+    <link rel="stylesheet" href="css/proyectos.css" />
+  </head>
+
+  <body>
+
+    <!-- ========================================
+         HEADER
+         Idéntico al de index.html para mantener
+         consistencia visual en todo el sitio.
+    ========================================= -->
+    <header>
+
+      <!-- Presentación: título de la plataforma + logo -->
+      <section class="presentacion">
+        <div class="titulo">
+          <h1>Plataforma de Gestión de Proyectos</h1>
+        </div>
+        <div class="contenedor-logo">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="assets/img/fi-logo.png"
+              alt="Logo de la Facultad de Ingeniería - UNJU."
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Menú de navegación principal -->
+      <!-- El link "Proyectos" tiene la clase nav-activo para indicar la página actual -->
+      <div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><p>|</p></li>
+            <li><a href="proyectos.html" class="nav-activo">Proyectos</a></li>
+            <li><p>|</p></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- ========================================
+         MAIN
+         Estructura de dos columnas con CSS Grid:
+         - aside: panel de filtros (izquierda)
+         - section: listado de proyectos (derecha)
+    ========================================= -->
+    <main>
+
+      <!-- Panel lateral de filtros -->
+      <aside id="filtros">
+        <h2>Filtros</h2>
+
+        <!-- Filtro por categoría -->
+        <section class="grupo-filtro">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" name="categoria">
+            <option value="">Todos</option>
+            <option value="diseno">Diseño</option>
+            <option value="programas">Programas</option>
+            <option value="bases-datos">Bases de Datos</option>
+            <option value="ventas">Gestión y Ventas</option>
+          </select>
+        </section>
+
+        <!-- Filtro por año -->
+        <section class="grupo-filtro">
+          <label for="anio">Año</label>
+          <select id="anio" name="anio">
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </section>
+
+        <!-- Filtro por estado del proyecto -->
+        <section class="grupo-filtro">
+          <label for="estado">Estado</label>
+          <select id="estado" name="estado">
+            <option value="en-curso">En curso</option>
+            <option value="finalizado">Finalizado</option>
+          </select>
+        </section>
+
+        <button type="button" class="btn-filtrar">Aplicar filtros</button>
+      </aside>
+
+      <!-- Listado de los 5 proyectos educativos -->
+      <section id="listado-proyectos">
+        <h2>Explorador de Proyectos</h2>
+
+        <!-- Contenedor de tarjetas de proyecto -->
+        <div class="contenedor-proyectos">
+
+          <!-- Proyecto 1: Diseño -->
+          <article class="tarjeta-proyecto">
+            <img
+              src="assets/img/imagen-noticia.jfif"
+              alt="Imagen del proyecto de diseño de interfaces"
+              class="proyecto-imagen"
+            />
+            <div class="proyecto-info">
+              <span class="proyecto-categoria">Diseño</span>
+              <h3>Diseño de Interfaces para Plataformas Educativas</h3>
+              <p class="proyecto-descripcion">
+                Rediseño de la interfaz de usuario de la plataforma de gestión académica,
+                aplicando principios de UX/UI para mejorar la experiencia de alumnos y docentes.
+              </p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Programas -->
+          <article class="tarjeta-proyecto">
+            <img
+              src="assets/img/imagen-noticia.jfif"
+              alt="Imagen del proyecto de sistema de gestión académica"
+              class="proyecto-imagen"
+            />
+            <div class="proyecto-info">
+              <span class="proyecto-categoria">Programas</span>
+              <h3>Sistema de Gestión de Trabajos Prácticos</h3>
+              <p class="proyecto-descripcion">
+                Aplicación web desarrollada con HTML, CSS y JavaScript que permite a los
+                alumnos entregar sus trabajos prácticos mediante repositorios de GitHub.
+              </p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Programas -->
+          <article class="tarjeta-proyecto">
+            <img
+              src="assets/img/imagen-noticia.jfif"
+              alt="Imagen del proyecto de automatización de procesos"
+              class="proyecto-imagen"
+            />
+            <div class="proyecto-info">
+              <span class="proyecto-categoria">Programas</span>
+              <h3>Automatización de Procesos Administrativos</h3>
+              <p class="proyecto-descripcion">
+                Desarrollo de scripts y herramientas para automatizar tareas administrativas
+                repetitivas dentro de la facultad, reduciendo tiempos de gestión.
+              </p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Bases de Datos -->
+          <article class="tarjeta-proyecto">
+            <img
+              src="assets/img/imagen-noticia.jfif"
+              alt="Imagen del proyecto de base de datos"
+              class="proyecto-imagen"
+            />
+            <div class="proyecto-info">
+              <span class="proyecto-categoria">Bases de Datos</span>
+              <h3>Configuración de Usuarios y Privilegios en BD</h3>
+              <p class="proyecto-descripcion">
+                Implementación de un sistema de roles y permisos en bases de datos relacionales,
+                aplicando buenas prácticas de seguridad y administración de accesos.
+              </p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: Gestión y Ventas -->
+          <article class="tarjeta-proyecto">
+            <img
+              src="assets/img/imagen-noticia.jfif"
+              alt="Imagen del proyecto de gestión de tiendas y stock"
+              class="proyecto-imagen"
+            />
+            <div class="proyecto-info">
+              <span class="proyecto-categoria">Gestión y Ventas</span>
+              <h3>Gestión de Tiendas y Stock de Productos</h3>
+              <p class="proyecto-descripcion">
+                Sistema de inventario y control de stock para pequeños comercios, desarrollado
+                como proyecto integrador aplicando bases de datos y programación orientada a objetos.
+              </p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+        </div>
+        <!-- fin .contenedor-proyectos -->
+
+      </section>
+      <!-- fin #listado-proyectos -->
+
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         Idéntico al de index.html para mantener
+         consistencia visual en todo el sitio.
+    ========================================= -->
+    <footer>
+      <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
+      <p>
+        Repositorio del Proyecto:
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
