@@ -9,28 +9,24 @@
 </head>
 <body>
     <!-- Header compartido (Copiado de index.html) -->
-    <header>
-      <section class="presentacion">
-        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
-        <div class="contenedor-logo">
-          <a href="index.html">
-            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
-          </a>
-        </div>
-      </section>
-
-      <div>
-        <nav>
-          <ul class="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li></li>
-            <li><a href="perfil.html">Perfil</a></li>
-          </ul>
-        </nav>
+  <header>
+    <section class="presentacion">
+      <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+      <div class="contenedor-logo">
+        <a href="index.html">
+          <img class="logo" src="assets/img/fi-logo.png" alt="Logo FI UNJu" />
+        </a>
       </div>
-    </header>
+    </section>
+    <!-- Este es el cambio clave: la clase .nav debe estar en la etiqueta <ul> -->
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="principal-proyectos">
         <!-- Barra de Filtros requerida por consigna -->
@@ -54,38 +50,72 @@
         </aside>
 
         <!-- Listado de Proyectos -->
-        <section class="listado-proyectos">
-            <h1>Explorador de Proyectos Educativos</h1>
-            
-            <!-- Tu proyecto (El que vincula a detalle.html) -->
-            <article class="proyecto-card">
-                <img src="assets/img/Esquema-de-conectividad-rural.png" alt="Conectividad Rural">
-                <div class="info">
-                    <h2>Conectividad Educativa Rural</h2>
-                    <p>Infraestructura de red LAN y satelital para escuelas del norte argentino.</p>
-                    <span class="categoria">Categoría: Redes</span>
-                    <a href="detalle.html" class="btn-detalle">Ver detalle</a>
-                </div>
-            </article>
+       <section class="listado-proyectos">
+        <h1>Explorador de Proyectos Educativos</h1>
+      
+      <!-- Proyecto 1: El tuyo (Vinculado a detalle.html) -->
+      <article class="proyecto-card">
+          <img src="assets/img/Esquema-de-conectividad-rural.png" alt="Conectividad Rural">
+          <div class="info">
+              <h2>Conectividad Educativa Rural</h2>
+              <p>Infraestructura de red LAN y satelital para escuelas del norte argentino.</p>
+              <span class="categoria">Categoría: Redes | Estado: Finalizado</span>
+              <a href="detalle.html" class="btn-detalle">Ver detalle</a>
+          </div>
+      </article>
 
-            <!-- Otros proyectos de ejemplo para completar los 5 requeridos -->
-            <article class="proyecto-card">
-                <img src="assets/img/imagen-noticia.jfif" alt="Gestión Escolar">
-                <div class="info">
-                    <h2>Sistema de Gestión de Notas</h2>
-                    <p>Aplicación web para el seguimiento académico de alumnos universitarios.</p>
-                    <span class="categoria">Categoría: Programación</span>
-                    <a href="#" class="btn-detalle">Ver detalle</a>
-                </div>
-            </article>
+      <!-- Proyecto 2 -->
+      <article class="proyecto-card">
+          <img src="assets/img/fi-logo.png" alt="Sistema de Gestión">
+          <div class="info">
+              <h2>Gestor de Bibliotecas Digitales</h2>
+              <p>Plataforma para la catalogación y préstamo de recursos bibliográficos en PDF.</p>
+              <span class="categoria">Categoría: Programación | Estado: En curso</span>
+              <a href="#" class="btn-detalle">Ver detalle</a>
+          </div>
+      </article>
 
-            <!-- Repetir hasta completar 5 proyectos con contenido coherente -->
-        </section>
-    </main>
+      <!-- Proyecto 3 -->
+      <article class="proyecto-card">
+          <img src="assets/img/fi-logo.png" alt="Laboratorio Virtual">
+          <div class="info">
+              <h2>Laboratorio de Simulación Física</h2>
+              <p>Software interactivo para experimentos de óptica y mecánica clásica.</p>
+              <span class="categoria">Categoría: Programación | Estado: Finalizado</span>
+              <a href="#" class="btn-detalle">Ver detalle</a>
+          </div>
+      </article>
+
+      <!-- Proyecto 4 -->
+      <article class="proyecto-card">
+          <img src="assets/img/fi-logo.png" alt="App Idiomas">
+          <div class="info">
+              <h2>Traductor de Lenguas Originarias</h2>
+              <p>Aplicación móvil para la preservación del Quechua y Guaraní en las aulas.</p>
+              <span class="categoria">Categoría: Programación | Estado: En curso</span>
+              <a href="#" class="btn-detalle">Ver detalle</a>
+          </div>
+      </article>
+
+      <!-- Proyecto 5 -->
+      <article class="proyecto-card">
+          <img src="assets/img/fi-logo.png" alt="Capacitación Docente">
+          <div class="info">
+              <h2>Portal de Capacitación Virtual</h2>
+              <p>Cursos de formación continua en herramientas de diseño para docentes.</p>
+              <span class="categoria">Categoría: Diseño | Estado: Finalizado</span>
+              <a href="#" class="btn-detalle">Ver detalle</a>
+          </div>
+      </article>
+       </section>
+      </main>
 
     <footer>
       <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
-      <p>Repositorio: <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7" target="_blank">Ver GitHub</a></p>
+      <p>
+        Repositorio del Proyecto:
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+      </p>
     </footer>
 </body>
 </html>

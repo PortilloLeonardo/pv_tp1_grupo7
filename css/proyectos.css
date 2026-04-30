@@ -1,4 +1,53 @@
 /*==================================
+ESPECIFICACIONES GENERALES DEL BODY
+====================================*/
+body {
+  margin-top: 10px;
+  background-color: var(--colorFondoGeneral); /* Esto quita el fondo blanco */
+  color: var(--colorTextoGeneral);
+  font-family: var(--fuentePrincipal);
+  padding: 2%;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: var(--colorTitulo);
+}
+/* Estilos para que el menú se vea horizontal (Flexbox) */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; /* Quita los puntos de la lista */
+    background-color: var(--colorFondoMain);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--colorSubtitulo);
+    font-weight: bold;
+}
+
+/* Estilos para el logo y título en el header (Grid) */
+header {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-bottom: 20px;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Ajusta el tamaño para que no se vea gigante */
+    border-radius: 10px;
+}
+/*==================================
 ESTRUCTURA PRINCIPAL (CSS GRID)
 ====================================*/
 .principal-proyectos {
