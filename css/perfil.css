@@ -1,0 +1,197 @@
+/*==================================
+RESET A LOS PARAMETROS DEL NAVEGADOR
+====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Especificaciones generales*/
+body {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 25% 120% 11% 0%;
+  background-color: var(--colorFondoGeneral);
+  color: var(--colorTextoGeneral);
+  font-family: var(--fuentePrincipal);
+  padding: 2%;
+}
+
+/*=====================================
+Especificaciones para la seccion header
+=======================================*/
+header {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  color: var(--colorTitulo);
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+/*Elementos del header*/
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentacion .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.presentacion .contenendor-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  padding-right: 5px;
+}
+
+.logo {
+  height: 95%;
+  border-radius: 10px;
+}
+
+/*Elementos del menu de navegacion*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: var(--colorFondoMain);
+  border-radius: 10px;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--colorSubtitulo);
+  padding: 10px 20px;
+  border: 1px solid var(--colorFondoMain);
+}
+
+.nav a:hover {
+  color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 5px;
+}
+
+.nav a:focus {
+  outline: 2px solid var(--colorTitulo);
+  color: var(--colorResaltado);
+  border-radius: 5px;
+}
+
+.nav a:active {
+  transform: translateY(4px);
+  filter: brightness(0.8);
+  color: var(--colorActivacion);
+  border-color: var(--colorActivacionBrillo);
+}
+
+/*==================
+Elementos del footer
+====================*/
+
+footer {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: var(--colorTitulo);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.perfil-usuario {
+  display: flex;
+  justify-content: center;
+}
+
+.perfil-contenido {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  gap: 20px;
+
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 50px;
+  padding: 20px;
+  width: 315px;
+}
+
+.perfil-contenido h2 {
+  color: var(--colorTitulo);
+  font-size: 25px;
+}
+
+.perfil-contenido img {
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+}
+
+.info {
+  background-color: transparent;
+  border: 1px solid var(--colorTextoSuave);
+  padding: 16px;
+  border-radius: 40px;
+  width: 100%;
+}
+.info p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--colorTextoSuave);
+  padding: 6px 0;
+}
+
+.descripcion {
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.descripcion h3 {
+  font-size: 30px;
+  color: var(--colorTitulo);
+  margin-bottom: 20px;
+}
+
+.descripcion p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
