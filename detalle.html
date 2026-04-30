@@ -44,14 +44,33 @@
             <img src="assets/img/Esquema-de-conectividad-rural.png" alt="Esquema de conectividad rural" style="max-width: 50%; border-radius: 10px; margin: 20px 0;">
             
             <p>
-                Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
-                La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
-                satelital para establecimientos educativos con menos de 50 alumnos.
+                1. Resumen Ejecutivo
+                Este proyecto aborda la falta de acceso digital en escuelas rurales del norte argentino mediante el despliegue de infraestructuras
+                híbridas que combinan enlaces de larga distancia con redes internas de alta eficiencia. 
+                El objetivo es proporcionar un entorno de red seguro y optimizado para el consumo de contenidos pedagógicos de alta demanda.
             </p>
             <p>
-                Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
-                garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
-                priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos.
+                2. Arquitectura de Red y Topología
+                </p>La infraestructura se divide en tres capas fundamentales, diseñadas para maximizar la estabilidad en terrenos de difícil acceso:</p>
+                </p>*Capa de Acceso (WAN): Implementación de enlaces satelitales y radioenlaces de microondas para superar las barreras geográficas del relieve montañoso.</p>
+                </p>*Capa de Distribución: Segmentación de red mediante VLANs para separar el tráfico administrativo del tráfico de los estudiantes, garantizando la integridad de los datos institucionales.</p>
+                </p>*Capa Local (LAN): Configuración de switches con protocolos de enrutamiento estático para minimizar la carga de procesamiento en los nodos locales y asegurar una latencia baja.</p>
+            </p>
+                3. Especificaciones de Configuración y Seguridad
+                   </p> *El núcleo del sistema utiliza herramientas de código abierto para permitir la escalabilidad del proyecto:
+                   </p> *Gestión de Tráfico: Uso de firewalls para el filtrado de contenido y prevención de intrusiones, asegurando un entorno protegido para menores.
+                   </p> *Priorización (QoS): Configuración de Calidad de Servicio para dar prioridad absoluta a plataformas de videoconferencia y repositorios educativos sobre otros tipos de tráfico menos críticos.
+                   </p> *Optimización de Ancho de Banda: Implementación de servidores caché locales para almacenar contenido educativo frecuente, reduciendo la dependencia constante del enlace satelital.
+            </p>       
+                4. Componentes de Hardware Utilizados
+                   </p>Switches: Equipos configurables para el soporte de las topologías diseñadas en los manuales técnicos.
+                   </p> Access Points: Puntos de acceso de alta ganancia para cubrir áreas comunes y aulas rurales.
+                   </p> Nodos de Energía: Sistemas de alimentación ininterrumpida (UPS) o paneles solares (según disponibilidad) para mantener la red operativa ante cortes eléctricos.
+            </p>
+                5. Documentación de Soporte
+                    Para la replicabilidad del modelo, se han desarrollado los siguientes documentos técnicos:
+                    </p>Manual de Configuración de Switches: Guía paso a paso para la implementación de la lógica de red y esquemas de topología.
+                    </p>Esquema de Topología: Diagramas visuales que detallan la interconexión de cada nodo en el entorno rural. 3. Especificaciones de Configuración y Seguridad
             </p>
         </article>
 
