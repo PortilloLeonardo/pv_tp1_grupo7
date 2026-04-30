@@ -4,84 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Proyecto - Grupo 7</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalle.css">
 </head>
 <body>
+<!-- Encabezado de pagina copiado de index.html -->
     <header>
+      <section class="presentacion">
+        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+        <div class="contenedor-logo">
+          <a href="index.html">
+            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
+          </a>
+        </div>
+      </section>
+
+      <div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Explorador de Proyectos</a></li>
-                <li><a href="perfil.html">Mi Perfil</a></li>
-            </ul>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
         </nav>
-        <hr>
-        <h1>Proyecto: Implementación de Redes en Escuelas Rurales</h1>
-        <p><strong>Fecha de inicio:</strong> 13 de Abril de 2026</p>
-        <p><strong>Autores:</strong> Grupo N° 7 - Programación Visual</p>
+      </div>
     </header>
     <main>
-        <section>
-            <h2>Descripción del Proyecto</h2>
-            <p>
-                Este proyecto tiene como objetivo principal diseñar una infraestructura de red sólida y escalable para establecimientos 
-                educativos rurales. Se busca reducir la brecha digital mediante la instalación de puntos de acceso inalámbricos y 
-                servidores locales que permitan el acceso a contenidos pedagógicos incluso en zonas con conectividad limitada.
-            </p>
-            <p>
-                A través de esta iniciativa, los docentes podrán gestionar materiales multimedia y realizar un seguimiento del 
-                progreso de los alumnos de manera digital. La propuesta técnica incluye la configuración de protocolos de 
-                enrutamiento eficientes y la capacitación técnica del personal local para el mantenimiento básico del sistema.
-            </p>
+        <!-- Encabezado del proyecto con clase para estilos específicos -->
+        <section class="proyecto-header">
+            <h2>Proyecto: Conectividad Educativa Rural</h2>
+            <p><strong>Fecha de inicio:</strong> 15 de Marzo de 2026 | <strong>Autores:</strong> Grupo 7</p>
         </section>
 
-        <section>
-            <h2>Recursos y Documentación</h2>
-            <ul>
-                <li><a href="#">Manual de Instalación.pdf</a></li>
-                <li><a href="#">Planilla de Seguimiento (Google Drive)</a></li>
-                <li><a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7">Repositorio de Código en GitHub</a></li>
-            </ul>
-        </section>
+        <article class="descripcion-proyecto">
+            <h3>Descripción Técnica del Proyecto</h3>
+            <!-- Imagen requerida por la consigna -->
+            <img src="assets/img/Esquema de conectividad rural.png" alt="Esquema de conectividad rural" style="max-width: 50%; border-radius: 10px; margin: 20px 0;">
+            
+            <p>
+                Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
+                La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
+                satelital para establecimientos educativos con menos de 50 alumnos.
+            </p>
+            <p>
+                Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
+                garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
+                priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos.
+            </p>
+        </article>
 
-        <section>
-            <h2>Equipo de Trabajo</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Rol</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Portillo, Leonardo Gabriel</td>
-                        <td>Líder - Estructura y Dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>Ramos,Martin Emanuel</td>
-                        <td>Dev - Tablas y Formularios</td>
-                    </tr>
-                    <tr>
-                        <td>Bravo, Nicolas Exequiel</td>
-                        <td>Diseñador - Estilos y Validación</td>
-                    </tr>
-                    <tr>
-                        <td>Gregorio, Cristian Abraham</td>
-                        <td>Dev - Páginas Secundarias</td>
-                    </tr>
-                    <tr>
-                        <td>Caceres, Patricia del Milagro</td>
-                        <td>QA - Documentación y Testing</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
+        <section class="info-adicional">
+            <div class="recursos">
+                <h3>Recursos y Documentación</h3>
+                <p>Documentos técnicos para la réplica:</p>
+                <ul>
+                    <li><a href="assets/docs/Manual_Configuracion_Switches_Rural.pdf" target="_blank">Manual de Configuración.pdf</a></li>
+                    <li><a href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf" target="_blank">Esquema de Topología (PDF)</a></li>
+                </ul>
+            </div>
+
+            <div class="equipo">
+                <h3>Equipo de Trabajo</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Portillo, Leonardo</td><td>Líder</td></tr>
+                        <tr><td>Ramos, Martín</td><td>Semántica</td></tr>
+                        <tr><td>Bravo, Nicolás</td><td>Diseño</td></tr>
+                        <tr><td>Gregorio, Cristian</td><td>Desarrollador</td></tr>
+                        <tr><td>Caceres, Patricia</td><td>QA</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
-
+ <!-- Pie de pagina copiado de index.html -->
     <footer>
-        <p>&copy; 2026 Plataforma de Gestión de Proyectos Educativos - UNJU</p>
+      <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
+      <p>
+        Repositorio del Proyecto:
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+      </p>
     </footer>
-
 </body>
 </html>
