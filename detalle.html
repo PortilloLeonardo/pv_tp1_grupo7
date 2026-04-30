@@ -4,93 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Proyecto - Grupo 7</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="detalle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalle.css">
 </head>
 <body>
+<!-- Encabezado de pagina copiado de index.html -->
     <header>
+      <section class="presentacion">
+        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+        <div class="contenedor-logo">
+          <a href="index.html">
+            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
+          </a>
+        </div>
+      </section>
+
+      <div>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="detalle.html">Detalle</a>
-            <a href="perfil.html">Perfil</a>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
         </nav>
-        <hr>
-        <h1>Proyecto: Implementación de Redes en Escuelas Rurales</h1>
-        <p><strong>Fecha de inicio:</strong> 13 de Abril de 2026</p>
-        <p><strong>Autores:</strong> Grupo N° 7 - Programación Visual</p>
+      </div>
     </header>
     <main>
-        <section>
+        <!-- Encabezado del proyecto con clase para estilos específicos -->
+        <section class="proyecto-header">
             <h2>Proyecto: Conectividad Educativa Rural</h2>
-            <article>
-                <h3>Descripción Técnica del Proyecto</h3>
-                <p>
-                    Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
-                    La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
-                    satelital para establecimientos educativos con menos de 50 alumnos. La solución técnica incluye la instalación 
-                    de racks de comunicaciones, puntos de acceso inalámbricos con tecnología Wi-Fi 6 para cubrir áreas de recreación 
-                    y aulas, y la configuración de servidores de contenido local para que los estudiantes accedan a material 
-                    pedagógico incluso durante interrupciones del servicio externo.
-                </p>
-                <p>
-                    Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
-                    garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
-                    priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos. Este trabajo 
-                    forma parte de un esfuerzo conjunto entre estudiantes de la UNJu y comunidades locales, integrando 
-                    tecnologías modernas en entornos de difícil acceso geográfico.
-                </p>
-            </article>
+            <p><strong>Fecha de inicio:</strong> 15 de Marzo de 2026 | <strong>Autores:</strong> Grupo 7</p>
         </section>
 
-        <section>
-            <h2>Recursos y Documentación</h2>
-            <p>A continuación, se listan los documentos técnicos necesarios para la réplica del proyecto:</p>
-            <ul>
-                <li><a href="docs/manual_tecnico.pdf" target="_blank">Manual de Configuración de Switches.pdf</a></li>
-                <li><a href="docs/topologia_red.pdf" target="_blank">Esquema de Topología de Red (PDF)</a></li>
-                <li><a href="https://drive.google.com/drive/u/0/folders/ejemplo" target="_blank">Carpeta de Recursos Multimedia (Drive)</a></li>
-            </ul>
-        </section>
+        <article class="descripcion-proyecto">
+            <h3>Descripción Técnica del Proyecto</h3>
+            <!-- Imagen requerida por la consigna -->
+            <img src="assets/img/Esquema de conectividad rural.png" alt="Esquema de conectividad rural" style="max-width: 100%; border-radius: 10px; margin: 20px 0;">
+            
+            <p>
+                Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
+                La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
+                satelital para establecimientos educativos con menos de 50 alumnos.
+            </p>
+            <p>
+                Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
+                garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
+                priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos.
+            </p>
+        </article>
 
-        <section>
-            <h2>Equipo de Trabajo</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Integrante</th>
-                        <th>Rol en este Proyecto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Portillo, Leonardo Gabriel</td>
-                        <td>Líder - Estructura y Dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>Ramos, Martín Emanuel</td>
-                        <td>Validación de Semántica y Merge</td>
-                    </tr>
-                    <tr>
-                        <td>Bravo, Nicolás Exequiel</td>
-                        <td>Diseño de Proyectos </td>
-                    </tr>
-                    <tr>
-                        <td>Gregorio, Cristian Abraham</td>
-                        <td>Desarrollador de Detalle </td>
-                    </tr>
-                    <tr>
-                        <td>Caceres, Patricia del Milagro</td>
-                        <td>Control de Calidad y QA</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
+        <section class="info-adicional">
+            <div class="recursos">
+                <h3>Recursos y Documentación</h3>
+                <p>Documentos técnicos para la réplica:</p>
+                <ul>
+                    <li><a href="assets/docs/Manual_Configuracion_Switches_Rural.pdf" target="_blank">Manual de Configuración.pdf</a></li>
+                    <li><a href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf" target="_blank">Esquema de Topología (PDF)</a></li>
+                </ul>
+            </div>
+
+            <div class="equipo">
+                <h3>Equipo de Trabajo</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Portillo, Leonardo</td><td>Líder</td></tr>
+                        <tr><td>Ramos, Martín</td><td>Semántica</td></tr>
+                        <tr><td>Bravo, Nicolás</td><td>Diseño</td></tr>
+                        <tr><td>Gregorio, Cristian</td><td>Desarrollador</td></tr>
+                        <tr><td>Caceres, Patricia</td><td>QA</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
-
+ <!-- Pie de pagina copiado de index.html -->
     <footer>
-        <p>&copy; 2026 Plataforma de Gestión de Proyectos Educativos - UNJU</p>
+      <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
+      <p>
+        Repositorio del Proyecto:
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+      </p>
     </footer>
-
 </body>
 </html>

@@ -9,41 +9,91 @@
 
   <body>
     <header>
-      <h1>Plataforma de Gestión de Proyectos - UNJu</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="detalle.html">Detalle</a>
-        <a href="perfil.html">Perfil</a>
-      </nav>
-    </header>
-
-    <main>
-      <h2>Estadisticas generales</h2>
-      <br />
-      <section class="cajasDatos">
-        <div class="tarjeta">
-          <h3>Proyectos</h3>
-          <p>0</p>
-        </div>
-
-        <div class="tarjeta">
-          <h3>Tareas Hoy</h3>
-          <p>0</p>
-        </div>
-
-        <div class="tarjeta">
-          <h3>Grupos</h3>
-          <p>0</p>
+      <section class="presentacion">
+        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+        <div class="contenedor-logo">
+          <a href="index.html">
+            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
+          </a>
         </div>
       </section>
 
-      <section>
+      <div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><p>|</p></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><p>|</p></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="introduccion">
+        <h2>Bienvenido a la Plataforma FI UNJu.</h2>
+        <p>Este es un foro abierto para estudiantes y docentes de la institucion donde el objetivo es construir conocimiento compartido. Aquí podés publicar avances de tus proyectos, resolver dudas técnicas o debatir sobre las últimas novedades de nuestras cátedras.</p>
+        <button type="button" class="btn-crear">Crear proyecto +</button>
+      </section>
+
+      <section id="estadisticas">
+        <div><h2>Resumen del sistema</h2></div>
+        <div class="contenedor-card">
+          <div class="card">
+            <span class="etiqueta">Proyectos totales</span>
+            <span class="valor">12</span>
+          </div>
+
+          <div class="card">
+            <span class="etiqueta">Tareas para hoy</span>
+            <span class="valor">18</span>
+          </div>
+
+          <div class="card">
+            <span class="etiqueta">Mensajes pendientes</span>
+            <span class="valor">32</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="novedades">
         <h2>Novedades</h2>
-        <ul>
-          <li>Leonardo creó un nuevo archivo CSS.</li>
-          <li>Los alumnos exigen un 10 por su esfuerzo.</li>
-        </ul>
+        <div class="articulos">
+          <article class="noticia">
+            <h3>Se ha cargado una actualización para el inicio.</h3>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">Se han añadido nuevos articulos y una nueva interface para el usuario.</p>
+                <p class="publicacion">Portillo Leonardo - 29/04/2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <h3>Nuevo sistema de carga de Trabajos Prácticos.</h3>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">La presentacion de los trabajos prácticos deberan realizarse mediante repositorios.</p>
+                <p class="publicacion">Ramos Martin - 28/04/2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <h3>Las notas del trabajo práctico 1 ya fueron publicadas.</h3>
+            <div class="miniatura">
+              <img src="assets/img/imagen-noticia.jfif" alt="imagen-noticia." />
+              <div class="resumen">
+                <p class="descripcion">Las correcciones de los trabajos ya fue publicada y cuentan con detalles en su devolución.</p>
+                <p class="publicacion">Apaza Carolina - 24/04/2026</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -51,7 +101,7 @@
       <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
       <p>
         Repositorio del Proyecto:
-        <a href="https://github.com/tu-usuario/tu-repo" target="_blank">Ver en GitHub</a>
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
       </p>
     </footer>
   </body>

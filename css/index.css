@@ -1,210 +1,270 @@
-/*==============================================================
-REINICIA LOS PARAMETROS PARA MEJOR LECTURA EN CUALQUIER BROWSER
-===============================================================*/
-
+/*==================================
+RESET A LOS PARAMETROS DEL NAVEGADOR
+====================================*/
 * {
-  /*Quita el espacio externo de todas las cajas */
   margin: 0;
-  /*Quita el espacio interno de todas las cajas */
   padding: 0;
-  /*Hace que el tamaño de la caja sea fácil de calcular */
   box-sizing: border-box;
 }
 
-h1 {
-  /*FUENTE DEL TITULO*/
-  font-family: var(--fuentePrincipal);
-  /*TAMAÑO DEL TITULO*/
-  font-size: var(--tamañoTitulo);
-  /*AUMENTA EL GROSOR DEL TITULO*/
-  font-weight: bold;
-  /*SEPARACION DE LAS LETRAS*/
-  letter-spacing: 3px;
-  /*COLOR DE LA FUENTE DEL TITULO*/
-  color: var(--colorTitulo);
-  /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
-  margin-bottom: 30px;
-  /*APLICA ALINEACIÓN CENTRALIZADA*/
-  text-align: center;
-}
-
+/*Especificaciones generales*/
 body {
-  /*COLOR DEL FONDO*/
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 25% 120% 11% 0%;
   background-color: var(--colorFondoGeneral);
-  /*COLOR DE LA FUENTE*/
   color: var(--colorTextoGeneral);
-  /*TIPO DE FUENTE*/
   font-family: var(--fuentePrincipal);
-  /*INTERLINEADO*/
-  line-height: 1.6;
-}
-
-h2 {
-  /*TAMAÑO DE LOS SUBTITULOS */
-  font-size: var(--tamañoSubtitulo);
-  /*COLOR DE LOS SUBTITULOS*/
-  color: var(--colorSubtitulos);
-  /*LINEA DEBAJO PARA SEPARAR SECCIONES*/
-  border-bottom: 1px solid #333333;
-  /*ESPACIO PARA EL SIGUIENTE CUADRO*/
-  padding-bottom: 10px;
-  /*APLICA ALINEACIÓN DE IZQUIERDA*/
-  text-align: left;
-  /*ESPACIO ENTRE EL TITULO Y EL MENÚ*/
-  margin-top: 60px;
-  /*ESPACIO DE MARGEN IZQUIERDO*/
-  padding-left: 30px;
-}
-
-/*====================
-DISEÑO DE LOS ENLACES
-=====================*/
-
-nav {
-  /*COLOR DEL FONDO DEL NAVEGADOR*/
-  background-color: var(--colorFondoMenu);
-  /*ESPACIO EN BLANCO ARRIBA Y ABAJO DEL MENÚ*/
-  padding: 10px;
-  /*CENTRAR EL TEXTO*/
-  text-align: center;
-  /*LINEA DE SEPARACIÓN AL CONTENIDO*/
-  border-bottom: 2px solid #333333;
-  /*ESPACIO DEBAJO DEL MENPU*/
-  margin-bottom: 30px;
-}
-
-/*DEFINE EL ESTILO DE LOS ENLACES*/
-nav a {
-  /*COLOR DE LA FUENTE*/
-  color: var(--colorTitulo);
-  /*QUITA EL SUBRAYADO POR DEFECTO*/
-  text-decoration: none;
-  /*ESPACIO ENTRE LOS ENLACES*/
-  margin: 30px;
-  /*GROSOR DE LA LETRA*/
-  font-weight: bold;
-  /*EFECTO DE CAMBIOS DE COLOR SUAVE*/
-  transition: 0.5 seg;
-}
-
-/*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
-nav a:hover {
-  /*COLOR DE FUENTE CUANDO SE COLOCA ENCIMA EL MOUSE*/
-  color: var(--colorResaltado);
+  padding: 2%;
 }
 
 /*=====================================
-DISEÑO DE LAS TARJETAS PARA LOS DATOS
-======================================*/
-
-.cajasDatos {
-  /*CAJA FELXIBLE: COLOCA A TODAS LAS CAJAS EN FILA HORIZONTAL*/
-  display: flex;
-  /*APLICA ALINEACION JUSTIFICADA ENTRE LAS CAJAS*/
-  justify-content: space-around;
-  /*SI NO ENTRAN EN PANTALLA SE BAJAN*/
-  flex-wrap: wrap;
-  /*ESPACIO ENTRE TARJETAS*/
-  gap: 20px;
-  /*ESPACIO ARRIBA Y ABAJO*/
-  padding: 20px 0;
-}
-
-.tarjeta {
-  /*COLOR DE FONDO A CADA TARJETA*/
-  background-color: #1e1e1f;
-  /*BORDE DE LA TARJETA*/
-  border: 1px solid #333333;
-  /*REDONDEA LOS BORDES*/
-  border-radius: 10px;
-  /*ESPACIO ARRIBA Y ABAJO*/
-  padding: 30px;
-  /*ANCHO PARA QUE TODOS SEAN IGUALES*/
-  width: 200px;
-  /*ALINEACION DEL TEXTO DENTRO DE LAS TARJETAS*/
-  text-align: center;
-  /*EFECTO DE SOMBRA PARA LA TARJETA*/
-  box-shadow: 0 4px 10px #0e0e0e;
-  /*EFECTO DE MOVIMIENTO*/
-  transition: 0.5 seg;
-}
-
-/*EFECTO HOVER AL PASAR EL MOUSE POR LA TARJETA*/
-.tarjeta:hover {
-  /*LA TARJETA SUBE CUANDO PASO EL MOUSE*/
-  transform: translateY(-5px);
-  /*EL BORDE CAMBIA EL COLOR AL PASAR EL MOUSE*/
-  border-color: var(--colorTitulo);
-}
-
-.tarjeta h3 {
-  /*TAMAÑO DE LA FUENTE A ESCALA rem*/
-  font-size: 0.9rem;
-  /*COLOR DE LA FUENTE*/
-  color: var(--colorTextoSuave);
-  /*OBLIGA AL TEXTO A USAR MAYUSCULAS*/
-  text-transform: uppercase;
-}
-
-.tarjeta p {
-  /*TAMAÑO DE LA FUENTE*/
-  font-size: 2rem;
-  /*COLOR DE LA FUENTE*/
+Especificaciones para la seccion header
+=======================================*/
+header {
+  display: grid;
+  grid-template-rows: 70% 30%;
   color: var(--colorTitulo);
-  /*GROSOR DE LA FUENTE*/
-  font-weight: bold;
-  /*MARGEN SUPERIOR*/
-  margin-top: 10px;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+/*Elementos del header*/
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentacion .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.presentacion .contenendor-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  padding-right: 5px;
+}
+
+.logo {
+  height: 95%;
+  border-radius: 10px;
+}
+
+/*Elementos del menu de navegacion*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: var(--colorFondoMain);
+  border-radius: 10px;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--colorSubtitulo);
+  padding: 10px 20px;
+  border: 1px solid var(--colorFondoMain);
+}
+
+.nav a:hover {
+  color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 5px;
+}
+
+.nav a:focus {
+  outline: 2px solid var(--colorTitulo);
+  color: var(--colorResaltado);
+  border-radius: 5px;
+}
+
+.nav a:active {
+  transform: translateY(4px);
+  filter: brightness(0.8);
+  color: var(--colorActivacion);
+  border-color: var(--colorActivacionBrillo);
 }
 
 /*==================
-DISEÑO DE LAS LISTAS
-===================*/
-
-ul {
-  /*QUITA LOS PUNTOS DE LISTA POR DEFECTO*/
-  list-style-type: none;
-  /*GENERA MARGEN A LA IZQUIERDA*/
-  padding-left: 30px;
-}
-
-li::before {
-  /*PONE UN SIMBOLO ANTES DE CADA ITEM*/
-  content: "> ";
-  /*CAMBIA EL COLOR DE LA FUENTE*/
-  color: var(--colorTextoColor);
-  /*CAMBIA EL GROSOR DE LA FUENTE*/
-  font-weight: bold;
-}
+Elementos del footer
+====================*/
 
 footer {
-  /*COLOR DEL FONDO*/
-  background-color: var(--colorFondoPie);
-  /*COLOR DE LA FUENTE*/
-  color: var(--colorTextoSuave);
-  /*ALINEACION DE TEXTO CENTRADA*/
-  text-align: center;
-  /*GENERA ESPACIO ARRIBA Y ABAJO (NO MARGEN)*/
-  padding: 30px;
-  /*MARGEN SUPERIOR*/
-  margin-top: 60px;
-  /*MARCA UNA LINEA SUPERIOR*/
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-bottom: 3%;
+  padding-top: 1%;
   border-top: 1px solid var(--colorTextoSuave);
-  /*TAMAÑO DE LA FUENTE*/
-  font-size: 0.85rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a {
-  /*COLOR DE LA FUENTE*/
   color: var(--colorTitulo);
-  /*ELIMINA EL SUBRAYADO POR DEFECTO*/
   text-decoration: none;
-  /*ANCHO DE LA FUENTE*/
-  font-weight: bold;
 }
 
-/*EFECTO HOVER AL PASAR EL MOUSE POR EL ENLACE*/
 footer a:hover {
-  /*APLICA SUBRAYADO*/
   text-decoration: underline;
+}
+
+/*================
+Elementos del main
+==================*/
+
+main {
+  display: grid;
+  grid-template-rows: 20% 25% 58%;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+/*Elementos de introduccion*/
+#introduccion {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  flex-flow: wrap column;
+  gap: 20px;
+  border-bottom: 1px solid var(--colorTextoSuave);
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--colorSubtitulo);
+  margin: 10px;
+}
+
+#introduccion p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn-crear {
+  background-color: var(--colorTitulo);
+  color: var(--colorFondoGeneral);
+  font-family: var(--fuentePrincipal);
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+}
+
+.btn-crear:hover {
+  background-color: var(--colorSubtitulo);
+  color: var(--colorFondoGeneral);
+}
+
+.btn-crear:focus {
+  background-color: var(--colorSubtitulo);
+  color: var(--colorFondoGeneral);
+}
+
+.btn-crear:active {
+  background-color: var(--colorActivacionBrillo);
+  transform: translateY(3px);
+  color: var(--colorFondoGeneral);
+}
+
+/*Elementos de estadisticas*/
+#estadisticas {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 30px;
+  border-bottom: 1px solid var(--colorTextoSuave);
+  flex-direction: column;
+}
+
+.contenedor-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  width: 220px;
+  height: 170px;
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 10px;
+}
+
+.card .etiqueta {
+  font-size: 18px;
+  color: var(--colorTextoSuave);
+}
+.card .valor {
+  font-size: 50px;
+  color: var(--colorTitulo);
+}
+
+/*Elementos de novedades*/
+#novedades {
+  display: grid;
+  grid-template-rows: 15% 70%;
+}
+
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.articulos h3 {
+  font-size: 25px;
+}
+
+.noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 10px;
+}
+
+.noticia h3 {
+  background-color: var(--colorFondoMain);
+  color: var(--colorTitulo);
+  text-align: center;
+}
+
+.noticia .miniatura {
+  display: flex;
+  justify-content: space-around;
+}
+
+.noticia .miniatura img {
+  height: 180px;
+  border-radius: 10px;
+}
+
+.noticia .resumen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  max-width: 60%;
 }

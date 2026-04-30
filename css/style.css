@@ -4,18 +4,17 @@ concentrarnos en tonos oscuros que cuiden la vista mientras trabajamos*/
 :root {
   /*COLOR DE LOS FONDOS*/
   --colorFondoGeneral: #131314;
-  --colorFondoMenu: #43434b;
-  --colorFondoPie: #0b0b0c;
+  --colorFondoHeader: #131314;
+  --colorFondoMain: #43434b;
+  --colorFondoFooter: #0b0b0c;
   /*COLOR DE LAS FUENTES*/
   --colorTitulo: #4fdbf7;
-  --colorSubtitulos: #81d8fa;
+  --colorSubtitulo: #96efff;
   --colorTextoGeneral: #e3e3e3;
   --colorResaltado: #ffffff;
   --colorTextoSuave: #878787;
+  --colorActivacion: #e73131;
+  --colorActivacionBrillo: #e63f3f;
   /*TIPOS DE FUENTE*/
   --fuentePrincipal: "Candara", sans-serif;
-  /*TAMAÑO DE LAS FUENTES EN REM PARA QUE SEA RELATIVO*/
-  --tamañoTitulo: 3rem;
-  --tamañoSubtitulo: 2rem;
-  --tamañoCuerpo: 1rem;
 }

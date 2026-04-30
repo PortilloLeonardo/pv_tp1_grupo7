@@ -1,76 +1,159 @@
-/* Importamos el estilo global para usar las variables de colores (:root) */
-@import url("style.css");
+/*RESET Y VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* --- TAREA SECUNDARIA: CSS GRID PARA LA ESTRUCTURA --- */
 body {
-    display: grid;
-    /* Definimos tres áreas: encabezado, contenido principal y pie de página */
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    background-color: var(--colorFondoGeneral);
-    color: var(--colorTextoGeneral);
-    font-family: Arial, sans-serif;
+  margin-top: 10px;
+  display: grid;
+  /* Estructura general con CSS Grid según consigna */
+  grid-template-rows: auto 1fr auto; 
+  background-color: var(--colorFondoGeneral);
+  color: var(--colorTextoGeneral);
+  font-family: var(--fuentePrincipal);
+  padding: 2%;
+  min-height: 100vh;
 }
 
-header { grid-area: header; }
-main { 
-    grid-area: main; 
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto; /* Centra el contenido */
-}
-footer { grid-area: footer; }
-
-/* --- TAREA SECUNDARIA: FLEXBOX PARA COMPONENTES --- */
-
-/* Menú de navegación con Flexbox */
-nav {
-    display: flex;
-    justify-content: center; /* Centra los enlaces */
-    gap: 30px;               /* Espacio entre botones */
-    background-color: var(--colorFondoMenu);
-    padding: 15px;
+/*HEADER*/
+header {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  color: var(--colorTitulo);
+  font-size: 25px;
+  padding-top: 15px;
 }
 
-nav a {
-    color: var(--colorResaltado);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s; /* Para el efecto hover suave */
+.presentacion {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav a:hover {
-    color: var(--colorTitulos);
-    text-shadow: 0 0 5px var(--colorTitulos);
+.presentacion .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
-/* Lista de recursos con Flexbox */
-.recursos-lista {
-    display: flex;
-    flex-direction: column; /* Alineación vertical */
-    gap: 15px;
-    margin-top: 20px;
+h1 {
+  font-size: 80px;
 }
 
-/* Estilo para la tabla de equipo */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-    background-color: var(--colorFondoTarjetas);
+.presentacion .contenendor-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  padding-right: 5px;
 }
 
-th, td {
-    border: 1px solid var(--colorBordeSuave);
-    padding: 15px;
-    text-align: left;
+.logo {
+  height: 95%;
+  border-radius: 10px;
 }
 
-th {
-    color: var(--colorTitulos);
-    background-color: var(--colorFondoPie);
+/* MENÚ DE NAVEGACIÓN (Flexbox) */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: var(--colorFondoMain);
+  border-radius: 10px;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--colorSubtitulo);
+  padding: 10px 20px;
+  border: 1px solid var(--colorFondoMain);
+}
+
+/* ESTADOS INTERACTIVOS */
+.nav a:hover {
+  color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 5px;
+}
+
+.nav a:focus {
+  outline: 2px solid var(--colorTitulo);
+  color: var(--colorResaltado);
+  border-radius: 5px;
+}
+
+/*MAIN: DETALLE DEL PROYECTO*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+/* Encabezado del proyecto */
+.proyecto-header {
+  border-bottom: 2px solid var(--colorTitulo);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--colorSubtitulo);
+}
+
+/* Descripción Extendida */
+.descripcion-proyecto {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Sección de Equipo y Recursos (Uso de Flexbox) */
+.info-adicional {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Para que sea responsivo */
+}
+
+.equipo, .recursos {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  border: 1px solid var(--colorTextoSuave);
+  border-radius: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/*FOOTER*/
+footer {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  border-top: 1px solid var(--colorTextoSuave);
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: var(--colorTitulo);
+  text-decoration: none;
 }
