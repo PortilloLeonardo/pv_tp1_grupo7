@@ -1,86 +1,11 @@
-/*==================================
-ESPECIFICACIONES GENERALES DEL BODY
-====================================*/
-body {
-  margin-top: 10px;
-  display: grid;
-  grid-template-rows: 25% 120% 11% 0%;
-  background-color: var(--colorFondoGeneral);
-  color: var(--colorTextoGeneral);
-  font-family: var(--fuentePrincipal);
-  padding: 2%;
-}
-
-/*=====================================
-Especificaciones para la seccion header
-=======================================*/
-header {
-  display: grid;
-  grid-template-rows: 70% 30%;
-  color: var(--colorTitulo);
-  font-size: 25px;
-  padding-top: 15px;
-}
-
-/*Elementos del header*/
-.presentacion {
-  display: flex;
-  justify-content: space-between;
-}
-
-.presentacion .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-.presentacion .contenendor-logo {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 20%;
-  padding-right: 5px;
-}
-
-.logo {
-  height: 75%;
-  border-radius: 10px;
-}
-
-/*Elementos del menu de navegacion*/
-.nav {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  gap: 20px;
-  padding: 10px 10px;
-  background-color: var(--colorFondoMain);
-  border-radius: 10px;
-}
-
-.nav a {
-  display: block;
-  text-decoration: none;
-  color: var(--colorSubtitulo);
-  padding: 10px 20px;
-  border: 1px solid var(--colorFondoMain);
-}
-
-.nav a:hover {
-  color: var(--colorResaltado);
-  border: 1px solid var(--colorTitulo);
-  border-radius: 5px;
-}
-
-.nav a:focus {
-  outline: 2px solid var(--colorTitulo);
-  color: var(--colorResaltado);
-  border-radius: 5px;
+/*==============================================
+  proyectos.css
+  Estilos específicos para proyectos.html.
+  Usa las variables definidas en style.css (:root)
+  para mantener consistencia visual con el resto
+  del sitio.
+  Estructura general: CSS Grid
+  Componentes internos (filtros, tarjetas): Flexbox
 }
 
 .nav a:active {
@@ -90,83 +15,45 @@ h1 {
   border-color: var(--colorActivacionBrillo);
 }
 
-/*==================================
-ESTRUCTURA PRINCIPAL (CSS GRID)
-====================================*/
-.principal-proyectos {
-    display: grid;
-    /* Definimos dos columnas: una estrecha para filtros y otra ancha para proyectos */
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
-    padding: 20px;
-    min-height: 80vh;
-    border-top: 1px solid var(--colorTextoSuave);
+.Barra-filtros select:focus {
+  outline: 1px solid var(--colorTitulo);
+  border-color: var(--colorTitulo);
 }
 
-/* BARRA DE FILTROS */
-.barra-filtros {
-    background-color: var(--colorFondoMain);
-    padding: 20px;
-    border-radius: 10px;
-    height: fit-content;
+.Barra-filtros select:active {
+  border-color: var(--colorActivacionBrillo);
 }
 
-.barra-filtros h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: var(--colorTitulo);
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
 }
 
-.barra-filtros label {
-    display: block;
-    margin-top: 10px;
-    color: var(--colorTextoGeneral);
+.btn-crear {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.3rem;
+  padding: 1rem;
+  background-color: var(--colorTitulo);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-color: 1px solid var(--colorTextoSuave);
 }
 
-.barra-filtros select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    background-color: var(--colorFondoGeneral);
-    color: var(--colorTextoGeneral);
-    border: 1px solid var(--colorTextoSuave);
-    border-radius: 5px;
+.btn-crear:hover,
+.btn-crear:focus {
+  background-color: var(--colorSubtitulo);
 }
 
-/*==================================
-LISTADO DE PROYECTOS (FLEXBOX)
-====================================*/
-.listado-proyectos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.btn-crear:active {
+  background-color: var(--colorActivacionBrillo);
 }
 
-.listado-proyectos h1 {
-    font-size: 35px;
-    color: var(--colorSubtitulo);
-    margin-bottom: 10px;
-}
-
-/* TARJETAS DE PROYECTO */
-.proyecto-card {
-    display: flex; /* Flexbox para alinear imagen e info */
-    background-color: var(--colorFondoMain);
-    border: 1px solid var(--colorTextoSuave);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.proyecto-card:hover {
-    transform: scale(1.02);
-    border-color: var(--colorTitulo);
-}
-
-.proyecto-card img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
+/*================================================
+  SECCIÓN DE LISTADO DE PROYECTOS
+  Grid interno: título arriba, contenedor abajo
 }
 
 .info {
@@ -188,37 +75,8 @@ LISTADO DE PROYECTOS (FLEXBOX)
     margin: 10px 0;
 }
 
-/* BOTÓN VER DETALLE */
-.btn-detalle {
-    align-self: flex-start;
-    background-color: var(--colorTitulo);
-    color: var(--colorFondoGeneral);
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn-detalle:hover {
-    background-color: var(--colorSubtitulo);
-}
-footer {
-    display: flex;
-    flex-direction: column; /* Alinea los párrafos uno debajo del otro */
-    align-items: center;    /* Centra el contenido horizontalmente */
-    justify-content: center; /* Centra el contenido verticalmente si tiene altura */
-    padding: 20px;
-  
-    color: var(--colorTextoSuave);
-    border-top: 1px solid var(--colorTextoSuave);
-    text-align: center;      /* Asegura que el texto interno esté centrado */
-}
-
-footer a {
-    color: var(--colorTitulo);
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.informacion .etiqueta {
+  font-size: 1.6rem;
+  align-self: flex-end;
+  color: var(--colorTextoSuave);
 }
