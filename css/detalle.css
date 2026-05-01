@@ -1,14 +1,10 @@
-/*RESET Y VARIABLES*/
-
 /*MAIN: DETALLE DEL PROYECTO*/
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   gap: 2rem;
   padding: 2rem;
   border-top: 1px solid var(--colorTextoSuave);
-  max-width: 130rem; 
-  margin: 0 auto;    
   width: 100%;
 }
 
@@ -17,32 +13,45 @@ main {
   border-bottom: 2px solid var(--colorTitulo);
   padding-bottom: 1rem;
 }
-.proyecto-header p{
-  font-size: 1.3rem;
+.proyecto-header p {
+  font-size: 1.6rem;
+  text-align: right;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   color: var(--colorSubtitulo);
-}
-h3{
-  font-size:  1.7rem;
 }
 
 /* Descripción Extendida */
 .descripcion-proyecto {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  display: grid;
+  grid-template-rows: auto auto 1fr 1fr 1fr 1fr 1fr;
 }
+
+h3 {
+  color: var(colorTextoResaltado);
+  font-size: 2.5rem;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  width: 80rem;
+}
+
 .descripcion-proyecto p {
-  margin-bottom: 0.8rem; 
-  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
   line-height: 1.5; /* Agregado para mejor lectura con el justify */
-  text-align: justify;  
-  text-justify: inter-word;   
-  display: block;  
-  width: 100%;    
-}     
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
+}
 
 .info-adicional {
   display: flex;
@@ -51,7 +60,8 @@ h3{
   flex-wrap: wrap; /* Para que sea responsivo */
 }
 
-.equipo, .recursos {
+.equipo,
+.recursos {
   flex: 1;
   min-width: 30rem;
   padding: 1.5rem;
@@ -60,19 +70,24 @@ h3{
 }
 /* EQUIPO: TABLA TIPO "SCOREBOARD" */
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0.2rem 0.7rem; 
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0.2rem 0.7rem;
+  font-size: 1.3rem;
 }
 
 th {
-    color: var(--colorTextoSuave); 
-    text-align: left;
-    padding: 0.2rem 0.1rem ;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+  color: var(--colorTextoSuave);
+  text-align: left;
+  padding: 0.2rem 0.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
+.recursos p {
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
 
 ul {
   padding-left: 2rem;
@@ -82,4 +97,21 @@ ul {
 li {
   margin-bottom: 1rem;
 }
+li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--colorTitulo);
+  line-height: 2rem;
+}
+li a:hover,
+li a:focus {
+  color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 0.5rem;
+}
 
+li a:active {
+  color: var(--colorActivacionBrillo);
+  border: 1px solid var(--colorActivacionBrillo);
+  border-radius: 0.5rem;
+}
