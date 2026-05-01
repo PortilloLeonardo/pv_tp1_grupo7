@@ -2,42 +2,34 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explorador de Proyectos - Gestión de Proyectos Educativos</title>
-    <!-- Estilos globales y base del sitio -->
+    <title>Gestión de Proyectos Educativos</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Estilos específicos de esta página -->
-    <link rel="stylesheet" href="css/proyectos.css" />
+    <!--<link rel="stylesheet" href="css/index.css" />-->
   </head>
 
   <body>
-
     <!-- HEADER: Unificado con el resto del sitio -->
     <header>
       <section class="presentacion">
-        <div class="titulo">
-          <h1>Plataforma de Gestión de Proyectos</h1>
-        </div>
-        <div class="contenendor-logo">
-          <a href="index.html">
-            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de Ingeniería - UNJU." />
-          </a>
+        <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
+        <div class="contenedor-logo">
+          <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
         </div>
       </section>
 
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="proyectos.html" class="nav-activo">Proyectos</a></li>
-          <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- MAIN: Estructura de Filtros + Listado -->
     <main id="contenido-proyectos">
-      
       <aside id="filtros" class="Barra-filtros">
         <h2>Filtros</h2>
         <div class="campo-filtro">
@@ -73,10 +65,9 @@
         <h2>Explorador de Proyectos</h2>
 
         <div class="contenedor-proyectos">
-
           <!-- Proyecto 1 -->
           <article class="proyecto">
-            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto redes" class="proyecto-imagen">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto redes" class="proyecto-imagen" />
             <div class="informacion">
               <span class="etiqueta">Redes</span>
               <h3>Implementación de Redes en Escuelas Rurales</h3>
@@ -87,7 +78,7 @@
 
           <!-- Proyecto 2 -->
           <article class="proyecto">
-            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto diseño" class="proyecto-imagen">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto diseño" class="proyecto-imagen" />
             <div class="informacion">
               <span class="etiqueta">Diseño</span>
               <h3>Diseño de Interfaces para Plataformas</h3>
@@ -98,7 +89,7 @@
 
           <!-- Proyecto 3 -->
           <article class="proyecto">
-            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto programas" class="proyecto-imagen">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto programas" class="proyecto-imagen" />
             <div class="informacion">
               <span class="etiqueta">Programas</span>
               <h3>Sistema de Gestión de Trabajos Prácticos</h3>
@@ -109,7 +100,7 @@
 
           <!-- Proyecto 4 -->
           <article class="proyecto">
-            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto base de datos" class="proyecto-imagen">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto base de datos" class="proyecto-imagen" />
             <div class="informacion">
               <span class="etiqueta">Bases de Datos</span>
               <h3>Configuración de Usuarios y Privilegios</h3>
@@ -120,7 +111,7 @@
 
           <!-- Proyecto 5 -->
           <article class="proyecto">
-            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto ventas" class="proyecto-imagen">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto ventas" class="proyecto-imagen" />
             <div class="informacion">
               <span class="etiqueta">Ventas</span>
               <h3>Gestión de Tiendas y Stock</h3>
@@ -128,7 +119,6 @@
               <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
             </div>
           </article>
-
         </div>
       </section>
     </main>
@@ -137,10 +127,9 @@
     <footer>
       <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
       <p>
-        Repositorio del Proyecto: 
+        Repositorio del Proyecto:
         <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
       </p>
     </footer>
-
   </body>
 </html>

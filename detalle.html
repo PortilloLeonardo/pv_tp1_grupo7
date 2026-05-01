@@ -1,21 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del Proyecto - Grupo 7</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/detalle.css">
-</head>
-<body>
-<!-- Encabezado de pagina copiado de index.html -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestión de Proyectos Educativos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/index.css" />-->
+  </head>
+
+  <body>
+    <!-- HEADER: Unificado con el resto del sitio -->
     <header>
       <section class="presentacion">
         <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
         <div class="contenedor-logo">
-          <a href="index.html">
-            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
-          </a>
+          <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
         </div>
       </section>
 
@@ -23,70 +21,76 @@
         <nav>
           <ul class="nav">
             <li><a href="index.html">Inicio</a></li>
-            <li></li>
             <li><a href="proyectos.html">Proyectos</a></li>
-            <li></li>
             <li><a href="perfil.html">Perfil</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-        <!-- Encabezado del proyecto con clase para estilos específicos -->
-        <section class="proyecto-header">
-            <h2>Proyecto: Conectividad Educativa Rural</h2>
-            <p><strong>Fecha de inicio:</strong> 15 de Marzo de 2026 | <strong>Autores:</strong> Grupo 7</p>
-        </section>
+      <!-- Encabezado del proyecto con clase para estilos específicos -->
+      <section class="proyecto-header">
+        <h2>Proyecto: Conectividad Educativa Rural</h2>
+        <p><strong>Fecha de inicio:</strong> 15 de Marzo de 2026 | <strong>Autores:</strong> Grupo 7</p>
+      </section>
 
-        <article class="descripcion-proyecto">
-            <h3>Descripción Técnica del Proyecto</h3>
-            <!-- Imagen requerida por la consigna -->
-            <img src="assets/img/Esquema de conectividad rural.png" alt="Esquema de conectividad rural" style="max-width: 50%; border-radius: 10px; margin: 20px 0;">
-            
-            <p>
-                Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. 
-                La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet 
-                satelital para establecimientos educativos con menos de 50 alumnos.
-            </p>
-            <p>
-                Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para 
-                garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se 
-                priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos.
-            </p>
-        </article>
+      <article class="descripcion-proyecto">
+        <h3>Descripción Técnica del Proyecto</h3>
+        <!-- Imagen requerida por la consigna -->
+        <img src="assets/img/Esquema de conectividad rural.png" alt="Esquema de conectividad rural" style="max-width: 50%; border-radius: 10px; margin: 20px 0" />
 
-        <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
-        <section class="info-adicional">
-            <div class="recursos">
-                <h3>Recursos y Documentación</h3>
-                <p>Documentos técnicos para la réplica:</p>
-                <ul>
-                    <li><a href="assets/docs/Manual_Configuracion_Switches_Rural.pdf" target="_blank">Manual de Configuración.pdf</a></li>
-                    <li><a href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf" target="_blank">Esquema de Topología (PDF)</a></li>
-                </ul>
-            </div>
+        <p>Este proyecto surge como una respuesta a la brecha digital detectada en las zonas rurales del norte argentino. La iniciativa consiste en el diseño y despliegue de una infraestructura de red local (LAN) y el acceso a internet satelital para establecimientos educativos con menos de 50 alumnos.</p>
+        <p>Además del hardware, se implementó un sistema de gestión de tráfico basado en firewalls de código abierto para garantizar la seguridad de los menores en la red. Se utilizaron protocolos de enrutamiento estático y se priorizó el ancho de banda para plataformas de videoconferencia y repositorios educativos.</p>
+      </article>
 
-            <div class="equipo">
-                <h3>Equipo de Trabajo</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Integrante</th>
-                            <th>Rol</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Portillo, Leonardo</td><td>Líder</td></tr>
-                        <tr><td>Ramos, Martín</td><td>Semántica</td></tr>
-                        <tr><td>Bravo, Nicolás</td><td>Diseño</td></tr>
-                        <tr><td>Gregorio, Cristian</td><td>Desarrollador</td></tr>
-                        <tr><td>Caceres, Patricia</td><td>QA</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+      <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
+      <section class="info-adicional">
+        <div class="recursos">
+          <h3>Recursos y Documentación</h3>
+          <p>Documentos técnicos para la réplica:</p>
+          <ul>
+            <li><a href="assets/docs/Manual_Configuracion_Switches_Rural.pdf" target="_blank">Manual de Configuración.pdf</a></li>
+            <li><a href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf" target="_blank">Esquema de Topología (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div class="equipo">
+          <h3>Equipo de Trabajo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Integrante</th>
+                <th>Rol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Portillo, Leonardo</td>
+                <td>Líder</td>
+              </tr>
+              <tr>
+                <td>Ramos, Martín</td>
+                <td>Semántica</td>
+              </tr>
+              <tr>
+                <td>Bravo, Nicolás</td>
+                <td>Diseño</td>
+              </tr>
+              <tr>
+                <td>Gregorio, Cristian</td>
+                <td>Desarrollador</td>
+              </tr>
+              <tr>
+                <td>Caceres, Patricia</td>
+                <td>QA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
- <!-- Pie de pagina copiado de index.html -->
+    <!-- Pie de pagina copiado de index.html -->
     <footer>
       <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
       <p>
@@ -94,5 +98,5 @@
         <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
       </p>
     </footer>
-</body>
+  </body>
 </html>
