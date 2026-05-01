@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Gestión de Proyectos Educativos</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!--<link rel="stylesheet" href="css/index.css" />-->
+    <link rel="stylesheet" href="css/proyectos.css" />
   </head>
 
   <body>
@@ -29,36 +29,40 @@
     </header>
 
     <!-- MAIN: Estructura de Filtros + Listado -->
-    <main id="contenido-proyectos">
+    <main>
       <aside id="filtros" class="Barra-filtros">
-        <h2>Filtros</h2>
-        <div class="campo-filtro">
-          <label for="categoria">Categoría:</label>
-          <select id="categoria">
-            <option>Todos</option>
-            <option>Diseño</option>
-            <option>Programas</option>
-            <option>Bases de Datos</option>
-            <option>Redes</option>
-          </select>
-        </div>
+        <div>
+          <h2>Filtros</h2>
+          <div class="campo-filtro">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+              <option>Todos</option>
+              <option>Diseño</option>
+              <option>Programas</option>
+              <option>Bases de Datos</option>
+              <option>Redes</option>
+            </select>
+          </div>
 
-        <div class="campo-filtro">
-          <label for="anio">Año:</label>
-          <select id="anio">
-            <option>2025</option>
-            <option>2026</option>
-          </select>
-        </div>
+          <div class="campo-filtro">
+            <label for="anio">Año:</label>
+            <select id="anio">
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
 
-        <div class="campo-filtro">
-          <label for="estado">Estado:</label>
-          <select id="estado">
-            <option>En curso</option>
-            <option>Finalizado</option>
-          </select>
+          <div class="campo-filtro">
+            <label for="estado">Estado:</label>
+            <select id="estado">
+              <option>En curso</option>
+              <option>Finalizado</option>
+            </select>
+          </div>
         </div>
-        <button type="button" class="btn-crear">Aplicar filtros</button>
+        <div class="contenedor-boton">
+          <button type="button" class="btn-crear">Aplicar filtros</button>
+        </div>
       </aside>
 
       <section id="listado-proyectos">
