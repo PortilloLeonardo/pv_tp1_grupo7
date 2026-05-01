@@ -67,9 +67,9 @@ main {
 }
 
 .descripcion {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  border: 1px solid var(--colorTextoSuave);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0.5rem;
   padding: 2rem;
 }
@@ -82,4 +82,28 @@ main {
 
 .descripcion span {
   font-size: 1.6rem;
+}
+
+.contenedor-btn{
+  display: flex;
+  justify-content: right;
+}
+
+.Editar {
+  width: 10%;
+  font-size: 1.6rem;
+  background-color: var(--colorTitulo);
+  border-radius: 0.5rem;
+  font-family: var(--fuentePrincipal);
+}
+
+.Editar:hover,
+.Editar:focus {
+  background-color: var(--colorResaltado);
+  border: 1px solid var(--colorTitulo);
+  border-radius: 0.5rem;
+}
+
+.Editar:active {
+  background-color: var(--colorActivacionBrillo);
 }
