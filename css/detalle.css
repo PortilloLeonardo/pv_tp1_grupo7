@@ -138,22 +138,3 @@ li {
   margin-bottom: 10px;
 }
 
-/*FOOTER*/
-footer {
-  display: grid;
-  grid-template-rows: 50% 50%;
-  padding-bottom: 3%;
-  padding-top: 1%;
-  border-top: 1px solid var(--colorTextoSuave);
-}
-
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer a {
-  color: var(--colorTitulo);
-  text-decoration: none;
-}
