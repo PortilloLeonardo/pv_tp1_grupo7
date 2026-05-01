@@ -1,97 +1,146 @@
 <!doctype html>
 <html lang="es">
-  <head>g
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explorador de Proyectos - Gestion de Proyectos Educativos</title>
-    <!--Estilos globales compartidos con todas las paginas del sitio-->
-    <link rel="stylesheet" href="css/style.css" >
-    <!--Estilos especificos de esta  pagina-->
-    <link rel="stylesheet" href="css/proyectos.css" >
+    <title>Explorador de Proyectos - Gestión de Proyectos Educativos</title>
+    <!-- Estilos globales y base del sitio -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Estilos específicos de esta página -->
+    <link rel="stylesheet" href="css/proyectos.css" />
   </head>
-  
+
   <body>
-    <div class="Principal">
-      <aside class="Barra-filtros">
-        <h1>Filtros</h1>
-        <label>Categoria:</label>
-        <select>
-          <option>Todos</option>
-          <option>Diseño</option>
-          <option>Programas</option>
-        </select> <br>
-        <label>Año:</label>
-        <select>
-            <option>2025</option>
-            <option>2026</option>
-        </select>
-        <br>
-        <label>Estado:</label> 
-        <select> 
-          <option>En cursos</option>
-          <option>Finalizado</option>
-        </select>
-      </aside>
-      <section class="Contenedor de proytectos">
-        <h1>Explorador de proyecto</h1>
-        <article class="proyecto N°1">
-            <img src="" alt="Imagen del proyecto1">
-            <div class="informacion">
-                <h2>Proyector uno casual</h2>
-                <p>Hola este el primero proyecto , Descripcion del proyecto:Nadie pidió que resolviéramos este problema, pero aquí estamos, impulsados por cafeína y una fe ciega en que el código no explotará hoy
-                </p>
-                <a href="#">Ver detalle</a>
 
-                
-            </div>
-        </article>
-        <article class="proyecto N°2">
-            <img src="" alt="Imagen del proyecto2">
-            <div class="informacion">
-                <h2>Proyector dos paciencia</h2>
-                <p>Hola este el primero proyecto , Descripcion del proyecto:Hecho a mano y con mucha paciencia.
-                </p>
-                <a href="#">Ver detalle</a>
-
-                
-            </div>
-        </article>
-        <article class="proyecto N°3">
-            <img src="" alt="Imagen del proyecto3">
-            <div class="informacion">
-                <h2>Proyector tres Computadora</h2>
-                <p>Hola este el primero proyecto , Descripcion del proyecto:Funciona por pura fuerza de voluntad
-                </p>
-                <a href="#">Ver detalle</a>
-
-                
-            </div>
-        </article>
-        <article class="proyecto N°4">
-            <img src="" alt="Imagen del proyecto informatica">
-            <div class="informacion">
-                <h2>Proyector cuatro base de datos</h2>
-                <p>Configuración de usuarios y privilegios
-                </p>
-                <a href="#">Ver detalle</a>
-
-                
-            </div>
-        </article>
-        <article class="proyecto N°5">
-            <img src="" alt="Imagen del proyecto ventas">
-            <div class="informacion">
-                <h2>Proyector cinco ventas </h2>
-                <p>Gestión de tiendas y stock de productos
-                </p>
-                <a href="#">Ver detalle</a>
-
-                
-            </div>
-        </article>
-
+    <!-- HEADER: Unificado con el resto del sitio -->
+    <header>
+      <section class="presentacion">
+        <div class="titulo">
+          <h1>Plataforma de Gestión de Proyectos</h1>
+        </div>
+        <div class="contenendor-logo">
+          <a href="index.html">
+            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de Ingeniería - UNJU." />
+          </a>
+        </div>
       </section>
 
-    </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html" class="nav-activo">Proyectos</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN: Estructura de Filtros + Listado -->
+    <main id="contenido-proyectos">
+      
+      <aside id="filtros" class="Barra-filtros">
+        <h2>Filtros</h2>
+        <div class="campo-filtro">
+          <label for="categoria">Categoría:</label>
+          <select id="categoria">
+            <option>Todos</option>
+            <option>Diseño</option>
+            <option>Programas</option>
+            <option>Bases de Datos</option>
+            <option>Redes</option>
+          </select>
+        </div>
+
+        <div class="campo-filtro">
+          <label for="anio">Año:</label>
+          <select id="anio">
+            <option>2025</option>
+            <option>2026</option>
+          </select>
+        </div>
+
+        <div class="campo-filtro">
+          <label for="estado">Estado:</label>
+          <select id="estado">
+            <option>En curso</option>
+            <option>Finalizado</option>
+          </select>
+        </div>
+        <button type="button" class="btn-crear">Aplicar filtros</button>
+      </aside>
+
+      <section id="listado-proyectos">
+        <h2>Explorador de Proyectos</h2>
+
+        <div class="contenedor-proyectos">
+
+          <!-- Proyecto 1 -->
+          <article class="proyecto">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto redes" class="proyecto-imagen">
+            <div class="informacion">
+              <span class="etiqueta">Redes</span>
+              <h3>Implementación de Redes en Escuelas Rurales</h3>
+              <p>Diseño de infraestructura de red para establecimientos educativos rurales, reduciendo la brecha digital mediante servidores locales.</p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="proyecto">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto diseño" class="proyecto-imagen">
+            <div class="informacion">
+              <span class="etiqueta">Diseño</span>
+              <h3>Diseño de Interfaces para Plataformas</h3>
+              <p>Rediseño de interfaz de usuario aplicando principios de UX/UI para mejorar la experiencia de alumnos y docentes.</p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="proyecto">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto programas" class="proyecto-imagen">
+            <div class="informacion">
+              <span class="etiqueta">Programas</span>
+              <h3>Sistema de Gestión de Trabajos Prácticos</h3>
+              <p>Aplicación web que permite a los alumnos entregar sus trabajos mediante repositorios de GitHub.</p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 4 -->
+          <article class="proyecto">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto base de datos" class="proyecto-imagen">
+            <div class="informacion">
+              <span class="etiqueta">Bases de Datos</span>
+              <h3>Configuración de Usuarios y Privilegios</h3>
+              <p>Implementación de roles y permisos en bases de datos relacionales, aplicando buenas prácticas de seguridad.</p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 5 -->
+          <article class="proyecto">
+            <img src="assets/img/imagen-noticia.jfif" alt="Imagen del proyecto ventas" class="proyecto-imagen">
+            <div class="informacion">
+              <span class="etiqueta">Ventas</span>
+              <h3>Gestión de Tiendas y Stock</h3>
+              <p>Sistema de inventario para pequeños comercios, aplicando programación orientada a objetos.</p>
+              <a href="detalle.html" class="btn-detalle">Ver detalle →</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER: Unificado con el index -->
+    <footer>
+      <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
+      <p>
+        Repositorio del Proyecto: 
+        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+      </p>
+    </footer>
+
   </body>
 </html>
