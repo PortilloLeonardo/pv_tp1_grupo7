@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalle del Proyecto - Grupo 7</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/detalle.css">
-</head>
-<body>
-<!-- Encabezado de pagina copiado de index.html -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/detalle.css" />
+  </head>
+  <body>
+    <!-- Encabezado de pagina copiado de index.html -->
     <header>
       <section class="presentacion">
         <div class="titulo"><h1>Plataforma de Gestión de Proyectos</h1></div>
         <div class="contenedor-logo">
           <a href="index.html">
-            <img class="logo" src="assets/img/fi-logo.png" alt="Logo de la Facultad de ingenieria-unju." />
+            <img
+              class="logo"
+              src="assets/img/fi-logo.png"
+              alt="Logo de la Facultad de ingenieria-unju."
+            />
           </a>
         </div>
       </section>
@@ -32,86 +36,154 @@
       </div>
     </header>
     <main>
-        <!-- Encabezado del proyecto con clase para estilos específicos -->
-        <section class="proyecto-header">
-            <h2>Proyecto: Conectividad Educativa Rural</h2>
-            <p><strong>Fecha de inicio:</strong> 15 de Marzo de 2026 | <strong>Autores:</strong> Grupo 7</p>
-        </section>
+      <!-- Encabezado del proyecto con clase para estilos específicos -->
+      <section class="proyecto-header">
+        <h2>Proyecto: Conectividad Educativa Rural</h2>
+        <p>
+          <strong>Fecha de inicio:</strong> 15 de Marzo de 2026 |
+          <strong>Autores:</strong> Grupo 7
+        </p>
+      </section>
 
-        <article class="descripcion-proyecto">
-            <h3>Descripción Técnica del Proyecto</h3>
-            <!-- Imagen requerida por la consigna -->
-            <img src="assets/img/Esquema-de-conectividad-rural.png" alt="Esquema de conectividad rural" style="max-width: 50%; border-radius: 10px; margin: 20px 0;">
-            
-            <p>
-                1. Resumen Ejecutivo
-                Este proyecto aborda la falta de acceso digital en escuelas rurales del norte argentino mediante el despliegue de infraestructuras
-                híbridas que combinan enlaces de larga distancia con redes internas de alta eficiencia. 
-                El objetivo es proporcionar un entorno de red seguro y optimizado para el consumo de contenidos pedagógicos de alta demanda.
-            </p>
-            <p>
-                2. Arquitectura de Red y Topología
-                </p>La infraestructura se divide en tres capas fundamentales, diseñadas para maximizar la estabilidad en terrenos de difícil acceso:</p>
-                </p>*Capa de Acceso (WAN): Implementación de enlaces satelitales y radioenlaces de microondas para superar las barreras geográficas del relieve montañoso.</p>
-                </p>*Capa de Distribución: Segmentación de red mediante VLANs para separar el tráfico administrativo del tráfico de los estudiantes, garantizando la integridad de los datos institucionales.</p>
-                </p>*Capa Local (LAN): Configuración de switches con protocolos de enrutamiento estático para minimizar la carga de procesamiento en los nodos locales y asegurar una latencia baja.</p>
-            </p>
-                3. Especificaciones de Configuración y Seguridad
-                   </p> *El núcleo del sistema utiliza herramientas de código abierto para permitir la escalabilidad del proyecto:
-                   </p> *Gestión de Tráfico: Uso de firewalls para el filtrado de contenido y prevención de intrusiones, asegurando un entorno protegido para menores.
-                   </p> *Priorización (QoS): Configuración de Calidad de Servicio para dar prioridad absoluta a plataformas de videoconferencia y repositorios educativos sobre otros tipos de tráfico menos críticos.
-                   </p> *Optimización de Ancho de Banda: Implementación de servidores caché locales para almacenar contenido educativo frecuente, reduciendo la dependencia constante del enlace satelital.
-            </p>       
-                4. Componentes de Hardware Utilizados
-                   </p>Switches: Equipos configurables para el soporte de las topologías diseñadas en los manuales técnicos.
-                   </p> Access Points: Puntos de acceso de alta ganancia para cubrir áreas comunes y aulas rurales.
-                   </p> Nodos de Energía: Sistemas de alimentación ininterrumpida (UPS) o paneles solares (según disponibilidad) para mantener la red operativa ante cortes eléctricos.
-            </p>
-                5. Documentación de Soporte
-                    Para la replicabilidad del modelo, se han desarrollado los siguientes documentos técnicos:
-                    </p>Manual de Configuración de Switches: Guía paso a paso para la implementación de la lógica de red y esquemas de topología.
-                    </p>Esquema de Topología: Diagramas visuales que detallan la interconexión de cada nodo en el entorno rural. 3. Especificaciones de Configuración y Seguridad
-            </p>
-        </article>
+      <article class="descripcion-proyecto">
+        <h3>Descripción Técnica del Proyecto</h3>
+        <!-- Imagen requerida por la consigna -->
+        <img
+          src="assets/img/Esquema-de-conectividad-rural.png"
+          alt="Esquema de conectividad rural"
+          style="max-width: 50%; border-radius: 10px; margin: 20px 0"
+        />
+        <p>
+          1. Resumen Ejecutivo Este proyecto aborda la falta de acceso digital
+          en escuelas rurales del norte argentino mediante el despliegue de
+          infraestructuras híbridas que combinan enlaces de larga distancia con
+          redes internas de alta eficiencia. El objetivo es proporcionar un
+          entorno de red seguro y optimizado para el consumo de contenidos
+          pedagógicos de alta demanda.
+        </p>
 
-        <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
-        <section class="info-adicional">
-            <div class="recursos">
-                <h3>Recursos y Documentación</h3>
-                <p>Documentos técnicos para la réplica:</p>
-                <ul>
-                    <li><a href="assets/docs/Manual_Configuracion_Switches_Rural.pdf" target="_blank">Manual de Configuración.pdf</a></li>
-                    <li><a href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf" target="_blank">Esquema de Topología (PDF)</a></li>
-                </ul>
-            </div>
+        <p>
+          2. Arquitectura de Red y Topología La infraestructura se divide en
+          tres capas fundamentales, diseñadas para maximizar la estabilidad en
+          terrenos de difícil acceso: 
+          *Capa de Acceso (WAN): Implementación de
+          enlaces satelitales y radioenlaces de microondas para superar las
+          barreras geográficas del relieve montañoso. 
+          *Capa de Distribución:
+          Segmentación de red mediante VLANs para separar el tráfico
+          administrativo del tráfico de los estudiantes, garantizando la
+          integridad de los datos institucionales. 
+          *Capa Local (LAN):
+          Configuración de switches con protocolos de enrutamiento estático para
+          minimizar la carga de procesamiento en los nodos locales y asegurar
+          una latencia baja.
+        </p>
 
-            <div class="equipo">
-                <h3>Equipo de Trabajo</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Integrante</th>
-                            <th>Rol</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Portillo, Leonardo</td><td>Líder</td></tr>
-                        <tr><td>Ramos, Martín</td><td>Semántica</td></tr>
-                        <tr><td>Bravo, Nicolás</td><td>Diseño</td></tr>
-                        <tr><td>Gregorio, Cristian</td><td>Desarrollador</td></tr>
-                        <tr><td>Caceres, Patricia</td><td>QA</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <p>
+          3. Especificaciones de Configuración y Seguridad *El núcleo del
+          sistema utiliza herramientas de código abierto para permitir la
+          escalabilidad del proyecto: *Gestión de Tráfico: Uso de firewalls para
+          el filtrado de contenido y prevención de intrusiones, asegurando un
+          entorno protegido para menores. *Priorización (QoS): Configuración de
+          Calidad de Servicio para dar prioridad absoluta a plataformas de
+          videoconferencia y repositorios educativos sobre otros tipos de
+          tráfico menos críticos. *Optimización de Ancho de Banda:
+          Implementación de servidores caché locales para almacenar contenido
+          educativo frecuente, reduciendo la dependencia constante del enlace
+          satelital.
+        </p>
+
+        <p>
+          4. Componentes de Hardware Utilizados Switches: Equipos configurables
+          para el soporte de las topologías diseñadas en los manuales técnicos.
+          Access Points: Puntos de acceso de alta ganancia para cubrir áreas
+          comunes y aulas rurales. Nodos de Energía: Sistemas de alimentación
+          ininterrumpida (UPS) o paneles solares (según disponibilidad) para
+          mantener la red operativa ante cortes eléctricos.
+        </p>
+
+        <p>
+          5. Documentación de Soporte Para la replicabilidad del modelo, se han
+          desarrollado los siguientes documentos técnicos: Manual de
+          Configuración de Switches: Guía paso a paso para la implementación de
+          la lógica de red y esquemas de topología. Esquema de Topología:
+          Diagramas visuales que detallan la interconexión de cada nodo en el
+          entorno rural. 3. Especificaciones de Configuración y Seguridad
+        </p>
+      </article>
+
+      <!-- Contenedor con FLEXBOX para Recursos y Equipo -->
+      <section class="info-adicional">
+        <div class="recursos">
+          <h3>Recursos y Documentación</h3>
+          <p>Documentos técnicos para la réplica:</p>
+          <ul>
+            <li>
+              <a
+                href="assets/docs/Manual_Configuracion_Switches_Rural.pdf"
+                target="_blank"
+                >Manual de Configuración.pdf</a
+              >
+            </li>
+            <li>
+              <a
+                href="assets/docs/Informe_Conectividad_Rural_Topologias.pdf"
+                target="_blank"
+                >Esquema de Topología (PDF)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="equipo">
+          <h3>Equipo de Trabajo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Integrante</th>
+                <th>Rol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Portillo, Leonardo</td>
+                <td>Líder</td>
+              </tr>
+              <tr>
+                <td>Ramos, Martín</td>
+                <td>Semántica</td>
+              </tr>
+              <tr>
+                <td>Bravo, Nicolás</td>
+                <td>Diseño</td>
+              </tr>
+              <tr>
+                <td>Gregorio, Cristian</td>
+                <td>Desarrollador</td>
+              </tr>
+              <tr>
+                <td>Caceres, Patricia</td>
+                <td>QA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
- <!-- Pie de pagina copiado de index.html -->
+    <!-- Pie de pagina copiado de index.html -->
     <footer>
-      <p>&copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería UNJu</p>
+      <p>
+        &copy; 2026 - Programación Visual - Grupo 7 - Facultad de Ingeniería
+        UNJu
+      </p>
       <p>
         Repositorio del Proyecto:
-        <a href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#" target="_blank">Ver en GitHub</a>
+        <a
+          href="https://github.com/PortilloLeonardo/pv_tp1_grupo7#"
+          target="_blank"
+          >Ver en GitHub</a
+        >
       </p>
     </footer>
-</body>
+  </body>
 </html>

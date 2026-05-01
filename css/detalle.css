@@ -1,140 +1,85 @@
 /*RESET Y VARIABLES*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin-top: 10px;
-  display: grid;
-  /* Estructura general con CSS Grid según consigna */
-  grid-template-rows: auto 1fr auto; 
-  background-color: var(--colorFondoGeneral);
-  color: var(--colorTextoGeneral);
-  font-family: var(--fuentePrincipal);
-  padding: 2%;
-  min-height: 100vh;
-}
-
-/*HEADER*/
-header {
-  display: grid;
-  grid-template-rows: 70% 30%;
-  color: var(--colorTitulo);
-  font-size: 25px;
-  padding-top: 15px;
-}
-
-.presentacion {
-  display: flex;
-  justify-content: space-between;
-}
-
-.presentacion .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-.presentacion .contenendor-logo {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 20%;
-  padding-right: 5px;
-}
-
-.logo {
-  height: 95%;
-  border-radius: 10px;
-}
-
-/* MENÚ DE NAVEGACIÓN (Flexbox) */
-.nav {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  gap: 20px;
-  padding: 10px 10px;
-  background-color: var(--colorFondoMain);
-  border-radius: 10px;
-}
-
-.nav a {
-  display: block;
-  text-decoration: none;
-  color: var(--colorSubtitulo);
-  padding: 10px 20px;
-  border: 1px solid var(--colorFondoMain);
-}
-
-/* ESTADOS INTERACTIVOS */
-.nav a:hover {
-  color: var(--colorResaltado);
-  border: 1px solid var(--colorTitulo);
-  border-radius: 5px;
-}
-
-.nav a:focus {
-  outline: 2px solid var(--colorTitulo);
-  color: var(--colorResaltado);
-  border-radius: 5px;
-}
 
 /*MAIN: DETALLE DEL PROYECTO*/
 main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  padding: 2rem;
   border-top: 1px solid var(--colorTextoSuave);
+  max-width: 130rem; 
+  margin: 0 auto;    
+  width: 100%;
 }
 
 /* Encabezado del proyecto */
 .proyecto-header {
   border-bottom: 2px solid var(--colorTitulo);
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+.proyecto-header p{
+  font-size: 1.3rem;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 2.5rem;
   color: var(--colorSubtitulo);
+}
+h3{
+  font-size:  1.7rem;
 }
 
 /* Descripción Extendida */
 .descripcion-proyecto {
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 1.6;
 }
+.descripcion-proyecto p {
+  margin-bottom: 0.8rem; 
+  font-size: 1.3rem;
+  line-height: 1.5; /* Agregado para mejor lectura con el justify */
+  text-align: justify;  
+  text-justify: inter-word;   
+  display: block;  
+  width: 100%;    
+}     
 
-/* Sección de Equipo y Recursos (Uso de Flexbox) */
 .info-adicional {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 3rem;
   flex-wrap: wrap; /* Para que sea responsivo */
 }
 
 .equipo, .recursos {
   flex: 1;
-  min-width: 300px;
-  padding: 15px;
+  min-width: 30rem;
+  padding: 1.5rem;
   border: 1px solid var(--colorTextoSuave);
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+/* EQUIPO: TABLA TIPO "SCOREBOARD" */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.2rem 0.7rem; 
 }
 
+th {
+    color: var(--colorTextoSuave); 
+    text-align: left;
+    padding: 0.2rem 0.1rem ;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+
 ul {
-  padding-left: 20px;
-  margin-top: 10px;
+  padding-left: 2rem;
+  margin-top: 1rem;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
